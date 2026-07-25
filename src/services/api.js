@@ -4,7 +4,8 @@
  * Handles JWT attachment and error formatting.
  */
 
-const API_BASE = '/api';
+// Use Vite environment variable in production (e.g. deployed backend URL), fallback to '/api' for local dev proxy
+export const API_BASE = (import.meta.env.VITE_API_URL || '/api').replace(/\/+$/, '');
 
 /**
  * Helper to make API requests with standard error handling.

@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import { logoutUser } from '../services/api';
+import { logoutUser, API_BASE } from '../services/api';
 
 const AuthContext = createContext(null);
 
@@ -25,7 +25,7 @@ export function AuthProvider({ children }) {
 
         if (savedToken && savedUser) {
           // Validate token by fetching profile
-          const response = await fetch('/api/user/profile', {
+          const response = await fetch(`${API_BASE}/user/profile`, {
             headers: { Authorization: `Bearer ${savedToken}` },
           });
 
