@@ -227,3 +227,23 @@
 .animate-fade-in {
   animation: fade-in 0.3s ease-out;
 }
+
+/* ─── Auth Page Styles ─── */
+@keyframes auth-spinner {
+  to { transform: rotate(360deg); }
+}
+
+.auth-spinner {
+  animation: auth-spinner 0.6s linear infinite;
+}
+
+/* OTP Input Focus Glow */
+.otp-input-glow:focus {
+  box-shadow: 0 0 20px rgba(47, 128, 255, 0.4), 0 0 0 2px rgba(47, 128, 255, 0.3);
+}
+
+/* Password Strength Bar Transition */
+.strength-bar {
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+

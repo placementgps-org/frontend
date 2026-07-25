@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Sparkles, LogIn } from 'lucide-react';
+import { ArrowLeft, Sparkles, LogIn, LayoutDashboard } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useAuth } from '../context/AuthContext';
 
 export default function PlaceholderPage({ title, description, icon: Icon, onOpenLogin }) {
+  const { isAuthenticated } = useAuth();
+
   return (
     <div className="min-h-screen bg-[#05070F] text-white selection:bg-[#2F80FF] flex flex-col justify-between overflow-x-hidden">
       <Navbar onOpenLogin={onOpenLogin} />
@@ -36,26 +39,53 @@ export default function PlaceholderPage({ title, description, icon: Icon, onOpen
           </p>
 
           <div className="glass-card rounded-2xl p-8 border border-[#2F80FF]/20 max-w-md mx-auto space-y-4">
-            <div className="text-sm font-semibold text-white">Full Feature Launching Soon</div>
-            <p className="text-xs text-slate-400">
-              Sign in today to get early access notifications as soon as this module goes live!
-            </p>
-            <div className="flex items-center justify-center gap-3 pt-2">
-              <Link
-                to="/"
-                className="px-5 py-2.5 btn-secondary-glow rounded-xl text-xs font-semibold text-slate-200 flex items-center gap-2"
-              >
-                <ArrowLeft size={14} />
-                Back to Home
-              </Link>
-              <button
-                onClick={onOpenLogin}
-                className="px-5 py-2.5 btn-glow rounded-xl text-xs font-bold text-white flex items-center gap-2 cursor-pointer"
-              >
-                <LogIn size={14} />
-                Sign In For Updates
-              </button>
-            </div>
+            {isAuthenticated ? (
+              <>
+                <div className="text-sm font-semibold text-white">We're building this feature!</div>
+                <p className="text-xs text-slate-400">
+                  You're on our priority access list. Check back soon for the live launch!
+                </p>
+                <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+                  <Link
+                    to="/dashboard"
+                    className="px-5 py-2.5 btn-glow rounded-xl text-xs font-bold text-white flex items-center gap-2"
+                  >
+                    <LayoutDashboard size={14} />
+                    Back to Dashboard
+                  </Link>
+                  <Link
+                    to="/"
+                    className="px-5 py-2.5 btn-secondary-glow rounded-xl text-xs font-semibold text-slate-200 flex items-center gap-2"
+                  >
+                    <ArrowLeft size={14} />
+                    Back to Home
+                  </Link>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="text-sm font-semibold text-white">Full Feature Launching Soon</div>
+                <p className="text-xs text-slate-400">
+                  Sign in today to get early access notifications as soon as this module goes live!
+                </p>
+                <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+                  <Link
+                    to="/"
+                    className="px-5 py-2.5 btn-secondary-glow rounded-xl text-xs font-semibold text-slate-200 flex items-center gap-2"
+                  >
+                    <ArrowLeft size={14} />
+                    Back to Home
+                  </Link>
+                  <button
+                    onClick={onOpenLogin}
+                    className="px-5 py-2.5 btn-glow rounded-xl text-xs font-bold text-white flex items-center gap-2 cursor-pointer"
+                  >
+                    <LogIn size={14} />
+                    Sign In For Updates
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         </motion.div>
       </main>

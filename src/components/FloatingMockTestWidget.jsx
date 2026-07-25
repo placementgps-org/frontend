@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function FloatingMockTestWidget({ onStartMockTest }) {
+  const navigate = useNavigate();
   const [isClosed, setIsClosed] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
+
+  const handleStart = () => {
+    if (onStartMockTest) {
+      onStartMockTest();
+    } else {
+      navigate('/mock-test');
+    }
+  };
 
   if (isClosed) return null;
 
@@ -74,7 +84,7 @@ export default function FloatingMockTestWidget({ onStartMockTest }) {
 
             {/* Glowing Action Button with Pulse */}
             <button
-              onClick={onStartMockTest}
+              onClick={handleStart}
               className="w-full py-2.5 px-4 btn-glow animate-pulse-glow rounded-xl font-bold text-xs text-white flex items-center justify-center gap-2 shadow-lg group cursor-pointer"
             >
               Start Mock Test

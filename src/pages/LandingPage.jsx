@@ -1,6 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import LoginModal from '../components/LoginModal';
 import Hero from '../components/Hero';
 import ProductHighlights from '../components/ProductHighlights';
 import FAQSection from '../components/FAQSection';
@@ -8,7 +8,8 @@ import FloatingAIAssistant from '../components/FloatingAIAssistant';
 import FloatingMockTestWidget from '../components/FloatingMockTestWidget';
 import Footer from '../components/Footer';
 
-export default function LandingPage({ isLoginOpen, onOpenLogin, onCloseLogin }) {
+export default function LandingPage({ onOpenLogin }) {
+  const navigate = useNavigate();
   const handleScrollToSection = (sectionId) => {
     const element = document.querySelector(sectionId);
     if (element) {
@@ -27,11 +28,8 @@ export default function LandingPage({ isLoginOpen, onOpenLogin, onCloseLogin }) 
       {/* Sticky Glassmorphism Navbar */}
       <Navbar onOpenLogin={onOpenLogin} />
 
-      {/* Login Modal (UI Only) */}
-      <LoginModal isOpen={isLoginOpen} onClose={onCloseLogin} />
-
       {/* Floating Mock Test Widget – Right Side, Fixed */}
-      <FloatingMockTestWidget onStartMockTest={onOpenLogin} />
+      <FloatingMockTestWidget onStartMockTest={() => navigate('/mock-test')} />
 
       {/* Main Content */}
       <main>
@@ -56,3 +54,4 @@ export default function LandingPage({ isLoginOpen, onOpenLogin, onCloseLogin }) 
     </div>
   );
 }
+
