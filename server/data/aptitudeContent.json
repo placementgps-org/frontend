@@ -1,0 +1,3091 @@
+{
+  "categories": [
+    {
+      "id": "numerical",
+      "name": "Numerical Practice",
+      "description": "Master quantitative aptitude and calculation skills.",
+      "icon": "Calculator",
+      "topicsCount": 35
+    },
+    {
+      "id": "logical",
+      "name": "Logical Reasoning",
+      "description": "Enhance your puzzle-solving and analytical thinking.",
+      "icon": "Brain",
+      "topicsCount": 40
+    },
+    {
+      "id": "verbal",
+      "name": "Verbal Ability",
+      "description": "Improve English grammar, vocabulary, and comprehension.",
+      "icon": "BookOpen",
+      "topicsCount": 35
+    },
+    {
+      "id": "situational",
+      "name": "Situational Judgement",
+      "description": "Tackle workplace scenarios and behavioral questions.",
+      "icon": "Users",
+      "topicsCount": 30
+    },
+    {
+      "id": "analytical",
+      "name": "Analytical & Critical Thinking",
+      "description": "Evaluate arguments and interpret complex data.",
+      "icon": "Lightbulb",
+      "topicsCount": 20
+    }
+  ],
+  "topics": {
+    "numerical": [
+      {
+        "id": "percentages",
+        "name": "Percentages",
+        "priority": 1,
+        "content": {
+          "importantFormulasOrRules": [
+            "Compare quantities per 100; percentage change uses the original value."
+          ],
+          "keyConcepts": [
+            "Compare quantities per 100; percentage change uses the original value."
+          ],
+          "shortcutsAndTricks": [
+            "Use 10%, 5%, 1%, 25%, 50% mental fractions."
+          ],
+          "commonMistakes": [
+            "Wrong base value; adding successive changes."
+          ]
+        }
+      },
+      {
+        "id": "ratio-proportion",
+        "name": "Ratio & Proportion",
+        "priority": 2,
+        "content": {
+          "importantFormulasOrRules": [
+            "Ratios compare quantities; proportions equate ratios."
+          ],
+          "keyConcepts": [
+            "Ratios compare quantities; proportions equate ratios."
+          ],
+          "shortcutsAndTricks": [
+            "Cross-multiply; reduce ratios before solving."
+          ],
+          "commonMistakes": [
+            "Mixed units; reversed ratio."
+          ]
+        }
+      },
+      {
+        "id": "averages",
+        "name": "Averages",
+        "priority": 3,
+        "content": {
+          "importantFormulasOrRules": [
+            "Average is total divided by count; total=average×count."
+          ],
+          "keyConcepts": [
+            "Average is total divided by count; total=average×count."
+          ],
+          "shortcutsAndTricks": [
+            "Use assumed average and deviations."
+          ],
+          "commonMistakes": [
+            "Wrong count; confusing average change with total change."
+          ]
+        }
+      },
+      {
+        "id": "profit-loss-discount",
+        "name": "Profit, Loss & Discount",
+        "priority": 4,
+        "content": {
+          "importantFormulasOrRules": [
+            "Profit/loss is based on cost price; discount is based on marked price."
+          ],
+          "keyConcepts": [
+            "Profit/loss is based on cost price; discount is based on marked price."
+          ],
+          "shortcutsAndTricks": [
+            "Successive discount=a+b−ab/100."
+          ],
+          "commonMistakes": [
+            "Using SP for profit%; treating discount as profit."
+          ]
+        }
+      },
+      {
+        "id": "time-speed-distance",
+        "name": "Time, Speed & Distance",
+        "priority": 5,
+        "content": {
+          "importantFormulasOrRules": [
+            "Speed=distance/time; relative speed depends on direction."
+          ],
+          "keyConcepts": [
+            "Speed=distance/time; relative speed depends on direction."
+          ],
+          "shortcutsAndTricks": [
+            "Equal-distance average speed=2ab/(a+b)."
+          ],
+          "commonMistakes": [
+            "Unit mismatch; using arithmetic mean for unequal distances."
+          ]
+        }
+      },
+      {
+        "id": "time-work",
+        "name": "Time & Work",
+        "priority": 6,
+        "content": {
+          "importantFormulasOrRules": [
+            "Work rate is 1/time; combined rates add."
+          ],
+          "keyConcepts": [
+            "Work rate is 1/time; combined rates add."
+          ],
+          "shortcutsAndTricks": [
+            "Use LCM as total work."
+          ],
+          "commonMistakes": [
+            "Adding times instead of rates."
+          ]
+        }
+      },
+      {
+        "id": "number-system",
+        "name": "Number System",
+        "priority": 7,
+        "content": {
+          "importantFormulasOrRules": [
+            "Understand primes, factors, multiples, divisibility and remainders."
+          ],
+          "keyConcepts": [
+            "Understand primes, factors, multiples, divisibility and remainders."
+          ],
+          "shortcutsAndTricks": [
+            "Use divisibility tests before long division."
+          ],
+          "commonMistakes": [
+            "Calling 1 prime; confusing factor and multiple."
+          ]
+        }
+      },
+      {
+        "id": "data-interpretation",
+        "name": "Data Interpretation",
+        "priority": 8,
+        "content": {
+          "importantFormulasOrRules": [
+            "Read labels, units, scale and totals before calculating."
+          ],
+          "keyConcepts": [
+            "Read labels, units, scale and totals before calculating."
+          ],
+          "shortcutsAndTricks": [
+            "Estimate first; use ratios for comparisons."
+          ],
+          "commonMistakes": [
+            "Misreading graph scale; wrong category."
+          ]
+        }
+      },
+      {
+        "id": "simple-interest",
+        "name": "Simple Interest",
+        "priority": 9,
+        "content": {
+          "importantFormulasOrRules": [
+            "SI=PRT/100; amount=P+SI."
+          ],
+          "keyConcepts": [
+            "SI=PRT/100; amount=P+SI."
+          ],
+          "shortcutsAndTricks": [
+            "Convert months to years first."
+          ],
+          "commonMistakes": [
+            "Using compound formula; wrong time unit."
+          ]
+        }
+      },
+      {
+        "id": "compound-interest",
+        "name": "Compound Interest",
+        "priority": 10,
+        "content": {
+          "importantFormulasOrRules": [
+            "A=P(1+r)^t; CI=A−P."
+          ],
+          "keyConcepts": [
+            "A=P(1+r)^t; CI=A−P."
+          ],
+          "shortcutsAndTricks": [
+            "For half-yearly compounding halve rate and double periods."
+          ],
+          "commonMistakes": [
+            "Using SI; wrong compounding period."
+          ]
+        }
+      },
+      {
+        "id": "probability",
+        "name": "Probability",
+        "priority": 11,
+        "content": {
+          "importantFormulasOrRules": [
+            "P(E)=favourable/total; P(not E)=1−P(E)."
+          ],
+          "keyConcepts": [
+            "P(E)=favourable/total; P(not E)=1−P(E)."
+          ],
+          "shortcutsAndTricks": [
+            "Use complement for 'at least one'."
+          ],
+          "commonMistakes": [
+            "Double-counting overlapping outcomes."
+          ]
+        }
+      },
+      {
+        "id": "permutation-combination",
+        "name": "Permutation & Combination",
+        "priority": 12,
+        "content": {
+          "importantFormulasOrRules": [
+            "Permutation means order matters; combination does not."
+          ],
+          "keyConcepts": [
+            "Permutation means order matters; combination does not."
+          ],
+          "shortcutsAndTricks": [
+            "nCr=nC(n−r)."
+          ],
+          "commonMistakes": [
+            "Choosing wrong formula; ignoring repeated objects."
+          ]
+        }
+      },
+      {
+        "id": "algebra",
+        "name": "Algebra",
+        "priority": 13,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use identities, factorisation and equations to simplify."
+          ],
+          "keyConcepts": [
+            "Use identities, factorisation and equations to simplify."
+          ],
+          "shortcutsAndTricks": [
+            "Factor before applying quadratic formula."
+          ],
+          "commonMistakes": [
+            "Sign errors; illegal division by zero."
+          ]
+        }
+      },
+      {
+        "id": "mixtures-alligation",
+        "name": "Mixtures & Alligation",
+        "priority": 14,
+        "content": {
+          "importantFormulasOrRules": [
+            "Mixtures use weighted averages; alligation compares deviations from the mean."
+          ],
+          "keyConcepts": [
+            "Mixtures use weighted averages; alligation compares deviations from the mean."
+          ],
+          "shortcutsAndTricks": [
+            "Use alligation for two-component mixtures."
+          ],
+          "commonMistakes": [
+            "Reversing alligation ratio; mixing units."
+          ]
+        }
+      },
+      {
+        "id": "ages",
+        "name": "Ages",
+        "priority": 15,
+        "content": {
+          "importantFormulasOrRules": [
+            "Age differences remain constant; ratios change with time."
+          ],
+          "keyConcepts": [
+            "Age differences remain constant; ratios change with time."
+          ],
+          "shortcutsAndTricks": [
+            "Represent ratio ages as multiples."
+          ],
+          "commonMistakes": [
+            "Changing the age difference; mixing time points."
+          ]
+        }
+      },
+      {
+        "id": "lcm-hcf",
+        "name": "LCM & HCF",
+        "priority": 16,
+        "content": {
+          "importantFormulasOrRules": [
+            "HCF uses minimum prime powers; LCM uses maximum prime powers."
+          ],
+          "keyConcepts": [
+            "HCF uses minimum prime powers; LCM uses maximum prime powers."
+          ],
+          "shortcutsAndTricks": [
+            "For two numbers HCF×LCM=product."
+          ],
+          "commonMistakes": [
+            "Reversing prime-power rule."
+          ]
+        }
+      },
+      {
+        "id": "data-sufficiency",
+        "name": "Data Sufficiency",
+        "priority": 17,
+        "content": {
+          "importantFormulasOrRules": [
+            "Determine whether information uniquely answers the question."
+          ],
+          "keyConcepts": [
+            "Determine whether information uniquely answers the question."
+          ],
+          "shortcutsAndTricks": [
+            "Test each statement alone, then together."
+          ],
+          "commonMistakes": [
+            "Solving unnecessarily; adding assumptions."
+          ]
+        }
+      },
+      {
+        "id": "partnership",
+        "name": "Partnership",
+        "priority": 18,
+        "content": {
+          "importantFormulasOrRules": [
+            "Profit share is proportional to capital×time."
+          ],
+          "keyConcepts": [
+            "Profit share is proportional to capital×time."
+          ],
+          "shortcutsAndTricks": [
+            "Compare capital-time products directly."
+          ],
+          "commonMistakes": [
+            "Ignoring duration."
+          ]
+        }
+      },
+      {
+        "id": "problems-on-numbers",
+        "name": "Problems on Numbers",
+        "priority": 19,
+        "content": {
+          "importantFormulasOrRules": [
+            "Represent consecutive, even, odd and digit-based numbers algebraically."
+          ],
+          "keyConcepts": [
+            "Represent consecutive, even, odd and digit-based numbers algebraically."
+          ],
+          "shortcutsAndTricks": [
+            "Two-digit number=10a+b."
+          ],
+          "commonMistakes": [
+            "Confusing digit with place value."
+          ]
+        }
+      },
+      {
+        "id": "mensuration",
+        "name": "Mensuration",
+        "priority": 20,
+        "content": {
+          "importantFormulasOrRules": [
+            "Know perimeter, area and volume formulas and their units."
+          ],
+          "keyConcepts": [
+            "Know perimeter, area and volume formulas and their units."
+          ],
+          "shortcutsAndTricks": [
+            "Use π=22/7 when appropriate."
+          ],
+          "commonMistakes": [
+            "Radius/diameter confusion; wrong units."
+          ]
+        }
+      },
+      {
+        "id": "geometry",
+        "name": "Geometry",
+        "priority": 21,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use angle rules, triangle properties and Pythagoras."
+          ],
+          "keyConcepts": [
+            "Use angle rules, triangle properties and Pythagoras."
+          ],
+          "shortcutsAndTricks": [
+            "Recognize common right triangles."
+          ],
+          "commonMistakes": [
+            "Assuming diagram is to scale."
+          ]
+        }
+      },
+      {
+        "id": "simplification-approximation",
+        "name": "Simplification & Approximation",
+        "priority": 22,
+        "content": {
+          "importantFormulasOrRules": [
+            "Follow operation order and preserve useful precision."
+          ],
+          "keyConcepts": [
+            "Follow operation order and preserve useful precision."
+          ],
+          "shortcutsAndTricks": [
+            "Cancel factors before multiplying."
+          ],
+          "commonMistakes": [
+            "Ignoring brackets; rounding too early."
+          ]
+        }
+      },
+      {
+        "id": "clocks",
+        "name": "Clocks",
+        "priority": 23,
+        "content": {
+          "importantFormulasOrRules": [
+            "Minute hand moves 6°/min; hour hand 0.5°/min."
+          ],
+          "keyConcepts": [
+            "Minute hand moves 6°/min; hour hand 0.5°/min."
+          ],
+          "shortcutsAndTricks": [
+            "Angle="
+          ],
+          "commonMistakes": [
+            "30H−5.5M|.|Treating hour hand as fixed."
+          ]
+        }
+      },
+      {
+        "id": "calendars",
+        "name": "Calendars",
+        "priority": 24,
+        "content": {
+          "importantFormulasOrRules": [
+            "Weekdays repeat every 7 days; leap years add an extra day."
+          ],
+          "keyConcepts": [
+            "Weekdays repeat every 7 days; leap years add an extra day."
+          ],
+          "shortcutsAndTricks": [
+            "Reduce day counts modulo 7."
+          ],
+          "commonMistakes": [
+            "Forgetting century leap-year rule."
+          ]
+        }
+      },
+      {
+        "id": "races",
+        "name": "Races",
+        "priority": 25,
+        "content": {
+          "importantFormulasOrRules": [
+            "Compare speed, distance and time between runners."
+          ],
+          "keyConcepts": [
+            "Compare speed, distance and time between runners."
+          ],
+          "shortcutsAndTricks": [
+            "Normalize one speed to 1."
+          ],
+          "commonMistakes": [
+            "Confusing time advantage with distance advantage."
+          ]
+        }
+      },
+      {
+        "id": "boats-streams",
+        "name": "Boats & Streams",
+        "priority": 26,
+        "content": {
+          "importantFormulasOrRules": [
+            "Downstream=boat+stream; upstream=boat−stream."
+          ],
+          "keyConcepts": [
+            "Downstream=boat+stream; upstream=boat−stream."
+          ],
+          "shortcutsAndTricks": [
+            "Still-water=(down+up)/2."
+          ],
+          "commonMistakes": [
+            "Adding stream speed upstream."
+          ]
+        }
+      },
+      {
+        "id": "pipes-cisterns",
+        "name": "Pipes & Cisterns",
+        "priority": 27,
+        "content": {
+          "importantFormulasOrRules": [
+            "Filling rates are positive; drains are negative."
+          ],
+          "keyConcepts": [
+            "Filling rates are positive; drains are negative."
+          ],
+          "shortcutsAndTricks": [
+            "Use LCM capacity."
+          ],
+          "commonMistakes": [
+            "Adding drain rate; ignoring partial working time."
+          ]
+        }
+      },
+      {
+        "id": "fractions-decimals",
+        "name": "Fractions & Decimals",
+        "priority": 28,
+        "content": {
+          "importantFormulasOrRules": [
+            "Fractions express ratios; decimals are base-10 representations."
+          ],
+          "keyConcepts": [
+            "Fractions express ratios; decimals are base-10 representations."
+          ],
+          "shortcutsAndTricks": [
+            "Memorize common fraction percentages."
+          ],
+          "commonMistakes": [
+            "Adding denominators; decimal-place errors."
+          ]
+        }
+      },
+      {
+        "id": "surds-indices",
+        "name": "Surds & Indices",
+        "priority": 29,
+        "content": {
+          "importantFormulasOrRules": [
+            "Apply exponent laws; keep irrational roots exact."
+          ],
+          "keyConcepts": [
+            "Apply exponent laws; keep irrational roots exact."
+          ],
+          "shortcutsAndTricks": [
+            "Extract perfect squares from roots."
+          ],
+          "commonMistakes": [
+            "√(a+b)=√a+√b error; wrong exponent law."
+          ]
+        }
+      },
+      {
+        "id": "progressions-ap-gp",
+        "name": "Progressions (AP/GP)",
+        "priority": 30,
+        "content": {
+          "importantFormulasOrRules": [
+            "AP has constant difference; GP has constant ratio."
+          ],
+          "keyConcepts": [
+            "AP has constant difference; GP has constant ratio."
+          ],
+          "shortcutsAndTricks": [
+            "AP middle term is average of equidistant terms."
+          ],
+          "commonMistakes": [
+            "Mixing AP and GP formulas."
+          ]
+        }
+      },
+      {
+        "id": "logarithms",
+        "name": "Logarithms",
+        "priority": 31,
+        "content": {
+          "importantFormulasOrRules": [
+            "Product becomes sum; quotient becomes difference; powers become multipliers."
+          ],
+          "keyConcepts": [
+            "Product becomes sum; quotient becomes difference; powers become multipliers."
+          ],
+          "shortcutsAndTricks": [
+            "Convert logarithmic form to exponential form."
+          ],
+          "commonMistakes": [
+            "log(a+b)=log a+log b; invalid domains."
+          ]
+        }
+      },
+      {
+        "id": "statistics",
+        "name": "Statistics",
+        "priority": 32,
+        "content": {
+          "importantFormulasOrRules": [
+            "Mean uses all values; median is middle ordered value; mode is most frequent."
+          ],
+          "keyConcepts": [
+            "Mean uses all values; median is middle ordered value; mode is most frequent."
+          ],
+          "shortcutsAndTricks": [
+            "Sort before finding median."
+          ],
+          "commonMistakes": [
+            "Unsorted median; confusing mode with maximum."
+          ]
+        }
+      },
+      {
+        "id": "set-theory",
+        "name": "Set Theory",
+        "priority": 33,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use union, intersection, complement and inclusion-exclusion."
+          ],
+          "keyConcepts": [
+            "Use union, intersection, complement and inclusion-exclusion."
+          ],
+          "shortcutsAndTricks": [
+            "n(A∪B)=n(A)+n(B)−n(A∩B)."
+          ],
+          "commonMistakes": [
+            "Double-counting intersection."
+          ]
+        }
+      },
+      {
+        "id": "coordinate-geometry",
+        "name": "Coordinate Geometry",
+        "priority": 34,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use distance, midpoint and slope formulas."
+          ],
+          "keyConcepts": [
+            "Use distance, midpoint and slope formulas."
+          ],
+          "shortcutsAndTricks": [
+            "Compare distance squared when possible."
+          ],
+          "commonMistakes": [
+            "Swapping coordinates; vertical-line slope error."
+          ]
+        }
+      },
+      {
+        "id": "stocks-shares",
+        "name": "Stocks & Shares",
+        "priority": 35,
+        "content": {
+          "importantFormulasOrRules": [
+            "Dividend is based on face value; yield is return relative to market value."
+          ],
+          "keyConcepts": [
+            "Dividend is based on face value; yield is return relative to market value."
+          ],
+          "shortcutsAndTricks": [
+            "Calculate dividend per share first."
+          ],
+          "commonMistakes": [
+            "Confusing face and market value."
+          ]
+        }
+      }
+    ],
+    "logical": [
+      {
+        "id": "number-series",
+        "name": "Number Series",
+        "priority": 1,
+        "content": {
+          "importantFormulasOrRules": [
+            "Find arithmetic, multiplicative, alternating or positional patterns."
+          ],
+          "keyConcepts": [
+            "Find arithmetic, multiplicative, alternating or positional patterns."
+          ],
+          "shortcutsAndTricks": [
+            "Check first/second differences and ratios."
+          ],
+          "commonMistakes": [
+            "Forcing a pattern from too few terms."
+          ]
+        }
+      },
+      {
+        "id": "coding-decoding",
+        "name": "Coding-Decoding",
+        "priority": 2,
+        "content": {
+          "importantFormulasOrRules": [
+            "Identify the exact transformation between symbols or letters."
+          ],
+          "keyConcepts": [
+            "Identify the exact transformation between symbols or letters."
+          ],
+          "shortcutsAndTricks": [
+            "Write alphabet positions."
+          ],
+          "commonMistakes": [
+            "Changing the mapping midway."
+          ]
+        }
+      },
+      {
+        "id": "logical-puzzles",
+        "name": "Logical Puzzles",
+        "priority": 3,
+        "content": {
+          "importantFormulasOrRules": [
+            "Convert conditions into tables, grids or diagrams."
+          ],
+          "keyConcepts": [
+            "Convert conditions into tables, grids or diagrams."
+          ],
+          "shortcutsAndTricks": [
+            "Place fixed information first."
+          ],
+          "commonMistakes": [
+            "Adding unstated assumptions."
+          ]
+        }
+      },
+      {
+        "id": "seating-arrangement",
+        "name": "Seating Arrangement",
+        "priority": 4,
+        "content": {
+          "importantFormulasOrRules": [
+            "Track positions, direction and adjacency."
+          ],
+          "keyConcepts": [
+            "Track positions, direction and adjacency."
+          ],
+          "shortcutsAndTricks": [
+            "Fix a reference seat first."
+          ],
+          "commonMistakes": [
+            "Reversing left/right for opposite-facing people."
+          ]
+        }
+      },
+      {
+        "id": "syllogisms",
+        "name": "Syllogisms",
+        "priority": 5,
+        "content": {
+          "importantFormulasOrRules": [
+            "Conclusions must follow necessarily from the statements."
+          ],
+          "keyConcepts": [
+            "Conclusions must follow necessarily from the statements."
+          ],
+          "shortcutsAndTricks": [
+            "Use Venn diagrams."
+          ],
+          "commonMistakes": [
+            "Treating some as all."
+          ]
+        }
+      },
+      {
+        "id": "blood-relations",
+        "name": "Blood Relations",
+        "priority": 6,
+        "content": {
+          "importantFormulasOrRules": [
+            "Translate relations into a family tree."
+          ],
+          "keyConcepts": [
+            "Translate relations into a family tree."
+          ],
+          "shortcutsAndTricks": [
+            "Start from the person being asked about."
+          ],
+          "commonMistakes": [
+            "Reversing gender or generation."
+          ]
+        }
+      },
+      {
+        "id": "direction-distance",
+        "name": "Direction & Distance",
+        "priority": 7,
+        "content": {
+          "importantFormulasOrRules": [
+            "Represent movement with coordinates and directions."
+          ],
+          "keyConcepts": [
+            "Represent movement with coordinates and directions."
+          ],
+          "shortcutsAndTricks": [
+            "Use Pythagoras for shortest distance."
+          ],
+          "commonMistakes": [
+            "Ignoring direction changes."
+          ]
+        }
+      },
+      {
+        "id": "statement-conclusion",
+        "name": "Statement & Conclusion",
+        "priority": 8,
+        "content": {
+          "importantFormulasOrRules": [
+            "A valid conclusion must be logically supported."
+          ],
+          "keyConcepts": [
+            "A valid conclusion must be logically supported."
+          ],
+          "shortcutsAndTricks": [
+            "Ignore outside knowledge."
+          ],
+          "commonMistakes": [
+            "Choosing a merely plausible conclusion."
+          ]
+        }
+      },
+      {
+        "id": "ranking-ordering",
+        "name": "Ranking & Ordering",
+        "priority": 9,
+        "content": {
+          "importantFormulasOrRules": [
+            "Represent positions from consistent ends."
+          ],
+          "keyConcepts": [
+            "Represent positions from consistent ends."
+          ],
+          "shortcutsAndTricks": [
+            "Total=rank1+rank2−1."
+          ],
+          "commonMistakes": [
+            "Forgetting the minus one."
+          ]
+        }
+      },
+      {
+        "id": "data-sufficiency",
+        "name": "Data Sufficiency",
+        "priority": 10,
+        "content": {
+          "importantFormulasOrRules": [
+            "Judge whether information is enough, not whether it is interesting."
+          ],
+          "keyConcepts": [
+            "Judge whether information is enough, not whether it is interesting."
+          ],
+          "shortcutsAndTricks": [
+            "Test statements independently first."
+          ],
+          "commonMistakes": [
+            "Assuming extra facts."
+          ]
+        }
+      },
+      {
+        "id": "analogy",
+        "name": "Analogy",
+        "priority": 11,
+        "content": {
+          "importantFormulasOrRules": [
+            "Find the exact relationship in the first pair."
+          ],
+          "keyConcepts": [
+            "Find the exact relationship in the first pair."
+          ],
+          "shortcutsAndTricks": [
+            "Describe relationship in words."
+          ],
+          "commonMistakes": [
+            "Choosing surface similarity."
+          ]
+        }
+      },
+      {
+        "id": "classification-odd-one-out",
+        "name": "Classification / Odd One Out",
+        "priority": 12,
+        "content": {
+          "importantFormulasOrRules": [
+            "Find the property shared by most items."
+          ],
+          "keyConcepts": [
+            "Find the property shared by most items."
+          ],
+          "shortcutsAndTricks": [
+            "Check category, structure and sequence."
+          ],
+          "commonMistakes": [
+            "Using an inconsistent property."
+          ]
+        }
+      },
+      {
+        "id": "alphanumeric-series",
+        "name": "Alphanumeric Series",
+        "priority": 13,
+        "content": {
+          "importantFormulasOrRules": [
+            "Track letter and number patterns separately."
+          ],
+          "keyConcepts": [
+            "Track letter and number patterns separately."
+          ],
+          "shortcutsAndTricks": [
+            "Use alphabet positions."
+          ],
+          "commonMistakes": [
+            "Skipping an index."
+          ]
+        }
+      },
+      {
+        "id": "statement-assumption",
+        "name": "Statement & Assumption",
+        "priority": 14,
+        "content": {
+          "importantFormulasOrRules": [
+            "An assumption is an unstated requirement behind a claim."
+          ],
+          "keyConcepts": [
+            "An assumption is an unstated requirement behind a claim."
+          ],
+          "shortcutsAndTricks": [
+            "Ask what must be true for the statement to work."
+          ],
+          "commonMistakes": [
+            "Confusing assumption with conclusion."
+          ]
+        }
+      },
+      {
+        "id": "statement-argument",
+        "name": "Statement & Argument",
+        "priority": 15,
+        "content": {
+          "importantFormulasOrRules": [
+            "Strong arguments are relevant, practical and logically connected."
+          ],
+          "keyConcepts": [
+            "Strong arguments are relevant, practical and logically connected."
+          ],
+          "shortcutsAndTricks": [
+            "Reject emotional or unrelated claims."
+          ],
+          "commonMistakes": [
+            "Confusing popularity with strength."
+          ]
+        }
+      },
+      {
+        "id": "cause-effect",
+        "name": "Cause & Effect",
+        "priority": 16,
+        "content": {
+          "importantFormulasOrRules": [
+            "A cause should plausibly precede and produce an effect."
+          ],
+          "keyConcepts": [
+            "A cause should plausibly precede and produce an effect."
+          ],
+          "shortcutsAndTricks": [
+            "Check timing and mechanism."
+          ],
+          "commonMistakes": [
+            "Equating correlation with causation."
+          ]
+        }
+      },
+      {
+        "id": "course-of-action",
+        "name": "Course of Action",
+        "priority": 17,
+        "content": {
+          "importantFormulasOrRules": [
+            "Good actions address the problem and are practical and proportionate."
+          ],
+          "keyConcepts": [
+            "Good actions address the problem and are practical and proportionate."
+          ],
+          "shortcutsAndTricks": [
+            "Prefer direct feasible steps."
+          ],
+          "commonMistakes": [
+            "Choosing extreme actions."
+          ]
+        }
+      },
+      {
+        "id": "venn-diagrams",
+        "name": "Venn Diagrams",
+        "priority": 18,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use circles to represent categories and overlap."
+          ],
+          "keyConcepts": [
+            "Use circles to represent categories and overlap."
+          ],
+          "shortcutsAndTricks": [
+            "Place subset relations first."
+          ],
+          "commonMistakes": [
+            "Double-counting overlaps."
+          ]
+        }
+      },
+      {
+        "id": "input-output",
+        "name": "Input-Output",
+        "priority": 19,
+        "content": {
+          "importantFormulasOrRules": [
+            "Infer the transformation from one stage to the next."
+          ],
+          "keyConcepts": [
+            "Infer the transformation from one stage to the next."
+          ],
+          "shortcutsAndTricks": [
+            "Compare adjacent stages."
+          ],
+          "commonMistakes": [
+            "Inventing unsupported operations."
+          ]
+        }
+      },
+      {
+        "id": "mathematical-operations",
+        "name": "Mathematical Operations",
+        "priority": 20,
+        "content": {
+          "importantFormulasOrRules": [
+            "Replace custom symbols with their defined operations."
+          ],
+          "keyConcepts": [
+            "Replace custom symbols with their defined operations."
+          ],
+          "shortcutsAndTricks": [
+            "Rewrite with actual operators first."
+          ],
+          "commonMistakes": [
+            "Using normal symbol meanings."
+          ]
+        }
+      },
+      {
+        "id": "logical-deduction",
+        "name": "Logical Deduction",
+        "priority": 21,
+        "content": {
+          "importantFormulasOrRules": [
+            "Only guaranteed conclusions are valid."
+          ],
+          "keyConcepts": [
+            "Only guaranteed conclusions are valid."
+          ],
+          "shortcutsAndTricks": [
+            "Use elimination and constraints."
+          ],
+          "commonMistakes": [
+            "Adding unstated conditions."
+          ]
+        }
+      },
+      {
+        "id": "decision-making",
+        "name": "Decision Making",
+        "priority": 22,
+        "content": {
+          "importantFormulasOrRules": [
+            "Evaluate options against goals, constraints and evidence."
+          ],
+          "keyConcepts": [
+            "Evaluate options against goals, constraints and evidence."
+          ],
+          "shortcutsAndTricks": [
+            "Eliminate invalid options first."
+          ],
+          "commonMistakes": [
+            "Choosing by preference alone."
+          ]
+        }
+      },
+      {
+        "id": "assertion-reason",
+        "name": "Assertion & Reason",
+        "priority": 23,
+        "content": {
+          "importantFormulasOrRules": [
+            "Check truth of both statements and whether reason explains assertion."
+          ],
+          "keyConcepts": [
+            "Check truth of both statements and whether reason explains assertion."
+          ],
+          "shortcutsAndTricks": [
+            "Evaluate A and R independently first."
+          ],
+          "commonMistakes": [
+            "Assuming a true reason explains A."
+          ]
+        }
+      },
+      {
+        "id": "logical-sequence",
+        "name": "Logical Sequence",
+        "priority": 24,
+        "content": {
+          "importantFormulasOrRules": [
+            "Order events by dependency or natural chronology."
+          ],
+          "keyConcepts": [
+            "Order events by dependency or natural chronology."
+          ],
+          "shortcutsAndTricks": [
+            "Find mandatory first/last events."
+          ],
+          "commonMistakes": [
+            "Ordering by intuition only."
+          ]
+        }
+      },
+      {
+        "id": "missing-characters",
+        "name": "Missing Characters",
+        "priority": 25,
+        "content": {
+          "importantFormulasOrRules": [
+            "Look for row, column, diagonal or arithmetic relationships."
+          ],
+          "keyConcepts": [
+            "Look for row, column, diagonal or arithmetic relationships."
+          ],
+          "shortcutsAndTricks": [
+            "Compare completed patterns."
+          ],
+          "commonMistakes": [
+            "Using a rule that works once."
+          ]
+        }
+      },
+      {
+        "id": "pattern-recognition",
+        "name": "Pattern Recognition",
+        "priority": 26,
+        "content": {
+          "importantFormulasOrRules": [
+            "Patterns may involve rotation, reflection, count or position."
+          ],
+          "keyConcepts": [
+            "Patterns may involve rotation, reflection, count or position."
+          ],
+          "shortcutsAndTricks": [
+            "Identify one transformation at a time."
+          ],
+          "commonMistakes": [
+            "Overcomplicating a simple pattern."
+          ]
+        }
+      },
+      {
+        "id": "cryptarithms",
+        "name": "Cryptarithms",
+        "priority": 27,
+        "content": {
+          "importantFormulasOrRules": [
+            "Letters represent digits with column-wise arithmetic and carries."
+          ],
+          "keyConcepts": [
+            "Letters represent digits with column-wise arithmetic and carries."
+          ],
+          "shortcutsAndTricks": [
+            "Start at the rightmost column."
+          ],
+          "commonMistakes": [
+            "Allowing invalid leading zero."
+          ]
+        }
+      },
+      {
+        "id": "calendar-reasoning",
+        "name": "Calendar Reasoning",
+        "priority": 28,
+        "content": {
+          "importantFormulasOrRules": [
+            "Weekday shifts follow modulo 7."
+          ],
+          "keyConcepts": [
+            "Weekday shifts follow modulo 7."
+          ],
+          "shortcutsAndTricks": [
+            "Reduce total days mod 7."
+          ],
+          "commonMistakes": [
+            "Ignoring leap years."
+          ]
+        }
+      },
+      {
+        "id": "clock-reasoning",
+        "name": "Clock Reasoning",
+        "priority": 29,
+        "content": {
+          "importantFormulasOrRules": [
+            "Hour and minute hands move at different rates."
+          ],
+          "keyConcepts": [
+            "Hour and minute hands move at different rates."
+          ],
+          "shortcutsAndTricks": [
+            "Relative movement is 5.5° per minute."
+          ],
+          "commonMistakes": [
+            "Treating hour hand as stationary."
+          ]
+        }
+      },
+      {
+        "id": "non-verbal-reasoning",
+        "name": "Non-Verbal Reasoning",
+        "priority": 30,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use rotation, reflection, counting, shading and position."
+          ],
+          "keyConcepts": [
+            "Use rotation, reflection, counting, shading and position."
+          ],
+          "shortcutsAndTricks": [
+            "Separate shape and orientation changes."
+          ],
+          "commonMistakes": [
+            "Confusing reflection with rotation."
+          ]
+        }
+      },
+      {
+        "id": "cube-dice",
+        "name": "Cube & Dice",
+        "priority": 31,
+        "content": {
+          "importantFormulasOrRules": [
+            "Track adjacent and opposite faces consistently."
+          ],
+          "keyConcepts": [
+            "Track adjacent and opposite faces consistently."
+          ],
+          "shortcutsAndTricks": [
+            "Keep a fixed orientation."
+          ],
+          "commonMistakes": [
+            "Rotating inconsistently."
+          ]
+        }
+      },
+      {
+        "id": "mirror-images",
+        "name": "Mirror Images",
+        "priority": 32,
+        "content": {
+          "importantFormulasOrRules": [
+            "A vertical mirror reverses left/right."
+          ],
+          "keyConcepts": [
+            "A vertical mirror reverses left/right."
+          ],
+          "shortcutsAndTricks": [
+            "Imagine a vertical reflection line."
+          ],
+          "commonMistakes": [
+            "Reversing top/bottom."
+          ]
+        }
+      },
+      {
+        "id": "water-images",
+        "name": "Water Images",
+        "priority": 33,
+        "content": {
+          "importantFormulasOrRules": [
+            "A water reflection reverses top/bottom."
+          ],
+          "keyConcepts": [
+            "A water reflection reverses top/bottom."
+          ],
+          "shortcutsAndTricks": [
+            "Imagine a horizontal reflection line."
+          ],
+          "commonMistakes": [
+            "Treating it as a mirror image."
+          ]
+        }
+      },
+      {
+        "id": "paper-folding",
+        "name": "Paper Folding",
+        "priority": 34,
+        "content": {
+          "importantFormulasOrRules": [
+            "Folds create repeated symmetrical layers."
+          ],
+          "keyConcepts": [
+            "Folds create repeated symmetrical layers."
+          ],
+          "shortcutsAndTricks": [
+            "Unfold in reverse order."
+          ],
+          "commonMistakes": [
+            "Ignoring fold direction."
+          ]
+        }
+      },
+      {
+        "id": "paper-cutting",
+        "name": "Paper Cutting",
+        "priority": 35,
+        "content": {
+          "importantFormulasOrRules": [
+            "Cuts repeat through each fold when unfolded."
+          ],
+          "keyConcepts": [
+            "Cuts repeat through each fold when unfolded."
+          ],
+          "shortcutsAndTricks": [
+            "Trace each fold systematically."
+          ],
+          "commonMistakes": [
+            "Missing repeated cuts."
+          ]
+        }
+      },
+      {
+        "id": "embedded-figures",
+        "name": "Embedded Figures",
+        "priority": 36,
+        "content": {
+          "importantFormulasOrRules": [
+            "Find an exact target shape hidden among extra lines."
+          ],
+          "keyConcepts": [
+            "Find an exact target shape hidden among extra lines."
+          ],
+          "shortcutsAndTricks": [
+            "Ignore irrelevant lines."
+          ],
+          "commonMistakes": [
+            "Rejecting a valid shape because of extra lines."
+          ]
+        }
+      },
+      {
+        "id": "figure-matrix",
+        "name": "Figure Matrix",
+        "priority": 37,
+        "content": {
+          "importantFormulasOrRules": [
+            "Rows/columns often combine, remove, rotate or invert elements."
+          ],
+          "keyConcepts": [
+            "Rows/columns often combine, remove, rotate or invert elements."
+          ],
+          "shortcutsAndTricks": [
+            "Compare multiple completed rows/columns."
+          ],
+          "commonMistakes": [
+            "Using a one-off rule."
+          ]
+        }
+      },
+      {
+        "id": "figure-completion",
+        "name": "Figure Completion",
+        "priority": 38,
+        "content": {
+          "importantFormulasOrRules": [
+            "Complete patterns through symmetry, continuation or repetition."
+          ],
+          "keyConcepts": [
+            "Complete patterns through symmetry, continuation or repetition."
+          ],
+          "shortcutsAndTricks": [
+            "Track line direction and count."
+          ],
+          "commonMistakes": [
+            "Choosing by appearance only."
+          ]
+        }
+      },
+      {
+        "id": "visual-reasoning",
+        "name": "Visual Reasoning",
+        "priority": 39,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use spatial transformations and relationships."
+          ],
+          "keyConcepts": [
+            "Use spatial transformations and relationships."
+          ],
+          "shortcutsAndTricks": [
+            "Separate position, shape and orientation."
+          ],
+          "commonMistakes": [
+            "Combining unnecessary transformations."
+          ]
+        }
+      },
+      {
+        "id": "advanced-puzzle-problems",
+        "name": "Advanced Puzzle Problems",
+        "priority": 40,
+        "content": {
+          "importantFormulasOrRules": [
+            "Combine multiple constraints systematically."
+          ],
+          "keyConcepts": [
+            "Combine multiple constraints systematically."
+          ],
+          "shortcutsAndTricks": [
+            "Use tables and case elimination."
+          ],
+          "commonMistakes": [
+            "Losing track of a constraint."
+          ]
+        }
+      }
+    ],
+    "verbal": [
+      {
+        "id": "reading-comprehension",
+        "name": "Reading Comprehension",
+        "priority": 1,
+        "content": {
+          "importantFormulasOrRules": [
+            "Identify main idea, tone, purpose, evidence and inference."
+          ],
+          "keyConcepts": [
+            "Identify main idea, tone, purpose, evidence and inference."
+          ],
+          "shortcutsAndTricks": [
+            "Read for structure and locate textual evidence."
+          ],
+          "commonMistakes": [
+            "Using outside knowledge."
+          ]
+        }
+      },
+      {
+        "id": "sentence-correction",
+        "name": "Sentence Correction",
+        "priority": 2,
+        "content": {
+          "importantFormulasOrRules": [
+            "Check agreement, tense, modifiers, parallelism and meaning."
+          ],
+          "keyConcepts": [
+            "Check agreement, tense, modifiers, parallelism and meaning."
+          ],
+          "shortcutsAndTricks": [
+            "Find the error category first."
+          ],
+          "commonMistakes": [
+            "Changing correct wording unnecessarily."
+          ]
+        }
+      },
+      {
+        "id": "error-detection",
+        "name": "Error Detection",
+        "priority": 3,
+        "content": {
+          "importantFormulasOrRules": [
+            "Common errors involve agreement, tense, articles, prepositions and pronouns."
+          ],
+          "keyConcepts": [
+            "Common errors involve agreement, tense, articles, prepositions and pronouns."
+          ],
+          "shortcutsAndTricks": [
+            "Read once for meaning and once for grammar."
+          ],
+          "commonMistakes": [
+            "Focusing only on spelling."
+          ]
+        }
+      },
+      {
+        "id": "fill-in-the-blanks",
+        "name": "Fill in the Blanks",
+        "priority": 4,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use grammar plus context to select the missing word."
+          ],
+          "keyConcepts": [
+            "Use grammar plus context to select the missing word."
+          ],
+          "shortcutsAndTricks": [
+            "Predict before viewing options."
+          ],
+          "commonMistakes": [
+            "Choosing a grammatical but illogical word."
+          ]
+        }
+      },
+      {
+        "id": "vocabulary",
+        "name": "Vocabulary",
+        "priority": 5,
+        "content": {
+          "importantFormulasOrRules": [
+            "Know meaning, usage, register and collocations."
+          ],
+          "keyConcepts": [
+            "Know meaning, usage, register and collocations."
+          ],
+          "shortcutsAndTricks": [
+            "Learn words in context."
+          ],
+          "commonMistakes": [
+            "Assuming meaning from spelling."
+          ]
+        }
+      },
+      {
+        "id": "synonyms",
+        "name": "Synonyms",
+        "priority": 6,
+        "content": {
+          "importantFormulasOrRules": [
+            "A synonym must preserve meaning and grammatical role."
+          ],
+          "keyConcepts": [
+            "A synonym must preserve meaning and grammatical role."
+          ],
+          "shortcutsAndTricks": [
+            "Check intensity and part of speech."
+          ],
+          "commonMistakes": [
+            "Choosing a merely related word."
+          ]
+        }
+      },
+      {
+        "id": "antonyms",
+        "name": "Antonyms",
+        "priority": 7,
+        "content": {
+          "importantFormulasOrRules": [
+            "Choose the true contextual opposite."
+          ],
+          "keyConcepts": [
+            "Choose the true contextual opposite."
+          ],
+          "shortcutsAndTricks": [
+            "Check part of speech."
+          ],
+          "commonMistakes": [
+            "Choosing a different rather than opposite word."
+          ]
+        }
+      },
+      {
+        "id": "para-jumbles",
+        "name": "Para Jumbles",
+        "priority": 8,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use opening sentence, mandatory pairs, references and conclusion."
+          ],
+          "keyConcepts": [
+            "Use opening sentence, mandatory pairs, references and conclusion."
+          ],
+          "shortcutsAndTricks": [
+            "Track pronouns and connectors."
+          ],
+          "commonMistakes": [
+            "Starting with an unexplained reference."
+          ]
+        }
+      },
+      {
+        "id": "sentence-rearrangement",
+        "name": "Sentence Rearrangement",
+        "priority": 9,
+        "content": {
+          "importantFormulasOrRules": [
+            "Arrange clauses by grammar, chronology and connectors."
+          ],
+          "keyConcepts": [
+            "Arrange clauses by grammar, chronology and connectors."
+          ],
+          "shortcutsAndTricks": [
+            "Find the independent clause first."
+          ],
+          "commonMistakes": [
+            "Ignoring punctuation."
+          ]
+        }
+      },
+      {
+        "id": "sentence-completion",
+        "name": "Sentence Completion",
+        "priority": 10,
+        "content": {
+          "importantFormulasOrRules": [
+            "Completion must preserve grammar, logic and tone."
+          ],
+          "keyConcepts": [
+            "Completion must preserve grammar, logic and tone."
+          ],
+          "shortcutsAndTricks": [
+            "Predict the idea before options."
+          ],
+          "commonMistakes": [
+            "Changing intended meaning."
+          ]
+        }
+      },
+      {
+        "id": "critical-reasoning",
+        "name": "Critical Reasoning",
+        "priority": 11,
+        "content": {
+          "importantFormulasOrRules": [
+            "Identify premise, conclusion, assumption and flaw."
+          ],
+          "keyConcepts": [
+            "Identify premise, conclusion, assumption and flaw."
+          ],
+          "shortcutsAndTricks": [
+            "Ask what must be true for the argument."
+          ],
+          "commonMistakes": [
+            "Treating an example as conclusion."
+          ]
+        }
+      },
+      {
+        "id": "grammar",
+        "name": "Grammar",
+        "priority": 12,
+        "content": {
+          "importantFormulasOrRules": [
+            "Covers structure, agreement, tense, modifiers and usage."
+          ],
+          "keyConcepts": [
+            "Covers structure, agreement, tense, modifiers and usage."
+          ],
+          "shortcutsAndTricks": [
+            "Identify subject, verb and modifiers."
+          ],
+          "commonMistakes": [
+            "Relying only on what sounds familiar."
+          ]
+        }
+      },
+      {
+        "id": "cloze-test",
+        "name": "Cloze Test",
+        "priority": 13,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use whole-passage context plus local grammar."
+          ],
+          "keyConcepts": [
+            "Use whole-passage context plus local grammar."
+          ],
+          "shortcutsAndTricks": [
+            "Read the paragraph before finalizing blanks."
+          ],
+          "commonMistakes": [
+            "Solving blanks independently."
+          ]
+        }
+      },
+      {
+        "id": "theme-detection",
+        "name": "Theme Detection",
+        "priority": 14,
+        "content": {
+          "importantFormulasOrRules": [
+            "Theme is the central idea rather than a detail."
+          ],
+          "keyConcepts": [
+            "Theme is the central idea rather than a detail."
+          ],
+          "shortcutsAndTricks": [
+            "Summarize in one sentence."
+          ],
+          "commonMistakes": [
+            "Choosing a minor example."
+          ]
+        }
+      },
+      {
+        "id": "inference-questions",
+        "name": "Inference Questions",
+        "priority": 15,
+        "content": {
+          "importantFormulasOrRules": [
+            "Inference must be supported, not invented."
+          ],
+          "keyConcepts": [
+            "Inference must be supported, not invented."
+          ],
+          "shortcutsAndTricks": [
+            "Choose the least-assumptive supported answer."
+          ],
+          "commonMistakes": [
+            "Making evidence stronger than it is."
+          ]
+        }
+      },
+      {
+        "id": "parts-of-speech",
+        "name": "Parts of Speech",
+        "priority": 16,
+        "content": {
+          "importantFormulasOrRules": [
+            "Identify a word by its function in the sentence."
+          ],
+          "keyConcepts": [
+            "Identify a word by its function in the sentence."
+          ],
+          "shortcutsAndTricks": [
+            "Check what role the word performs."
+          ],
+          "commonMistakes": [
+            "Assuming one fixed category."
+          ]
+        }
+      },
+      {
+        "id": "tenses",
+        "name": "Tenses",
+        "priority": 17,
+        "content": {
+          "importantFormulasOrRules": [
+            "Tense and aspect express time and completion."
+          ],
+          "keyConcepts": [
+            "Tense and aspect express time and completion."
+          ],
+          "shortcutsAndTricks": [
+            "Use time markers and event sequence."
+          ],
+          "commonMistakes": [
+            "Unnecessary tense switching."
+          ]
+        }
+      },
+      {
+        "id": "subject-verb-agreement",
+        "name": "Subject-Verb Agreement",
+        "priority": 18,
+        "content": {
+          "importantFormulasOrRules": [
+            "The verb agrees with the grammatical subject."
+          ],
+          "keyConcepts": [
+            "The verb agrees with the grammatical subject."
+          ],
+          "shortcutsAndTricks": [
+            "Ignore intervening phrases."
+          ],
+          "commonMistakes": [
+            "Matching the nearest noun."
+          ]
+        }
+      },
+      {
+        "id": "articles",
+        "name": "Articles",
+        "priority": 19,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use a/an for non-specific singular references and the for specific references."
+          ],
+          "keyConcepts": [
+            "Use a/an for non-specific singular references and the for specific references."
+          ],
+          "shortcutsAndTricks": [
+            "Choose a/an by sound."
+          ],
+          "commonMistakes": [
+            "Using the automatically before every noun."
+          ]
+        }
+      },
+      {
+        "id": "prepositions",
+        "name": "Prepositions",
+        "priority": 20,
+        "content": {
+          "importantFormulasOrRules": [
+            "Prepositions show relationships of time, place, direction and association."
+          ],
+          "keyConcepts": [
+            "Prepositions show relationships of time, place, direction and association."
+          ],
+          "shortcutsAndTricks": [
+            "Learn common fixed combinations."
+          ],
+          "commonMistakes": [
+            "Direct translation of prepositions."
+          ]
+        }
+      },
+      {
+        "id": "pronouns",
+        "name": "Pronouns",
+        "priority": 21,
+        "content": {
+          "importantFormulasOrRules": [
+            "Pronouns need clear reference and agreement."
+          ],
+          "keyConcepts": [
+            "Pronouns need clear reference and agreement."
+          ],
+          "shortcutsAndTricks": [
+            "Replace pronoun with noun to test clarity."
+          ],
+          "commonMistakes": [
+            "Ambiguous reference."
+          ]
+        }
+      },
+      {
+        "id": "conjunctions",
+        "name": "Conjunctions",
+        "priority": 22,
+        "content": {
+          "importantFormulasOrRules": [
+            "Conjunctions express addition, contrast, cause, condition or choice."
+          ],
+          "keyConcepts": [
+            "Conjunctions express addition, contrast, cause, condition or choice."
+          ],
+          "shortcutsAndTricks": [
+            "Identify the logical relationship."
+          ],
+          "commonMistakes": [
+            "Using paired conjunctions incorrectly."
+          ]
+        }
+      },
+      {
+        "id": "active-passive-voice",
+        "name": "Active & Passive Voice",
+        "priority": 23,
+        "content": {
+          "importantFormulasOrRules": [
+            "Voice changes focus while preserving the core meaning and tense."
+          ],
+          "keyConcepts": [
+            "Voice changes focus while preserving the core meaning and tense."
+          ],
+          "shortcutsAndTricks": [
+            "Object becomes passive subject; preserve tense."
+          ],
+          "commonMistakes": [
+            "Changing tense accidentally."
+          ]
+        }
+      },
+      {
+        "id": "direct-indirect-speech",
+        "name": "Direct & Indirect Speech",
+        "priority": 24,
+        "content": {
+          "importantFormulasOrRules": [
+            "Reported speech may change pronouns, tense and time expressions."
+          ],
+          "keyConcepts": [
+            "Reported speech may change pronouns, tense and time expressions."
+          ],
+          "shortcutsAndTricks": [
+            "Identify reporting verb and original tense."
+          ],
+          "commonMistakes": [
+            "Changing universal truths incorrectly."
+          ]
+        }
+      },
+      {
+        "id": "idioms-phrases",
+        "name": "Idioms & Phrases",
+        "priority": 25,
+        "content": {
+          "importantFormulasOrRules": [
+            "Idioms have conventional non-literal meanings."
+          ],
+          "keyConcepts": [
+            "Idioms have conventional non-literal meanings."
+          ],
+          "shortcutsAndTricks": [
+            "Learn with example sentences."
+          ],
+          "commonMistakes": [
+            "Literal interpretation."
+          ]
+        }
+      },
+      {
+        "id": "one-word-substitution",
+        "name": "One-Word Substitution",
+        "priority": 26,
+        "content": {
+          "importantFormulasOrRules": [
+            "Choose the precise word matching all defining features."
+          ],
+          "keyConcepts": [
+            "Choose the precise word matching all defining features."
+          ],
+          "shortcutsAndTricks": [
+            "Extract the key definition first."
+          ],
+          "commonMistakes": [
+            "Choosing a near-synonym."
+          ]
+        }
+      },
+      {
+        "id": "contextual-vocabulary",
+        "name": "Contextual Vocabulary",
+        "priority": 27,
+        "content": {
+          "importantFormulasOrRules": [
+            "Meaning changes with surrounding words and tone."
+          ],
+          "keyConcepts": [
+            "Meaning changes with surrounding words and tone."
+          ],
+          "shortcutsAndTricks": [
+            "Substitute options and test the full sentence."
+          ],
+          "commonMistakes": [
+            "Choosing the most familiar word."
+          ]
+        }
+      },
+      {
+        "id": "word-usage",
+        "name": "Word Usage",
+        "priority": 28,
+        "content": {
+          "importantFormulasOrRules": [
+            "Correct usage depends on grammar and collocation."
+          ],
+          "keyConcepts": [
+            "Correct usage depends on grammar and collocation."
+          ],
+          "shortcutsAndTricks": [
+            "Learn words in example sentences."
+          ],
+          "commonMistakes": [
+            "Treating similar words as interchangeable."
+          ]
+        }
+      },
+      {
+        "id": "spelling",
+        "name": "Spelling",
+        "priority": 29,
+        "content": {
+          "importantFormulasOrRules": [
+            "Watch vowels, doubled consonants, suffixes and silent letters."
+          ],
+          "keyConcepts": [
+            "Watch vowels, doubled consonants, suffixes and silent letters."
+          ],
+          "shortcutsAndTricks": [
+            "Break long words into syllables."
+          ],
+          "commonMistakes": [
+            "Relying only on pronunciation."
+          ]
+        }
+      },
+      {
+        "id": "homophones",
+        "name": "Homophones",
+        "priority": 30,
+        "content": {
+          "importantFormulasOrRules": [
+            "Similar sounds can have different meanings and spellings."
+          ],
+          "keyConcepts": [
+            "Similar sounds can have different meanings and spellings."
+          ],
+          "shortcutsAndTricks": [
+            "Use context to choose."
+          ],
+          "commonMistakes": [
+            "Choosing by sound alone."
+          ]
+        }
+      },
+      {
+        "id": "phrasal-verbs",
+        "name": "Phrasal Verbs",
+        "priority": 31,
+        "content": {
+          "importantFormulasOrRules": [
+            "Verb plus particle can form a new meaning."
+          ],
+          "keyConcepts": [
+            "Verb plus particle can form a new meaning."
+          ],
+          "shortcutsAndTricks": [
+            "Learn the complete phrase."
+          ],
+          "commonMistakes": [
+            "Literal translation."
+          ]
+        }
+      },
+      {
+        "id": "word-formation",
+        "name": "Word Formation",
+        "priority": 32,
+        "content": {
+          "importantFormulasOrRules": [
+            "Prefixes and suffixes alter meaning or part of speech."
+          ],
+          "keyConcepts": [
+            "Prefixes and suffixes alter meaning or part of speech."
+          ],
+          "shortcutsAndTricks": [
+            "Identify the grammatical slot."
+          ],
+          "commonMistakes": [
+            "Correct root with wrong form."
+          ]
+        }
+      },
+      {
+        "id": "sentence-transformation",
+        "name": "Sentence Transformation",
+        "priority": 33,
+        "content": {
+          "importantFormulasOrRules": [
+            "Change structure while preserving meaning."
+          ],
+          "keyConcepts": [
+            "Change structure while preserving meaning."
+          ],
+          "shortcutsAndTricks": [
+            "Identify target structure first."
+          ],
+          "commonMistakes": [
+            "Changing meaning or tense."
+          ]
+        }
+      },
+      {
+        "id": "advanced-vocabulary",
+        "name": "Advanced Vocabulary",
+        "priority": 34,
+        "content": {
+          "importantFormulasOrRules": [
+            "Focus on nuance, register, collocation and precise distinctions."
+          ],
+          "keyConcepts": [
+            "Focus on nuance, register, collocation and precise distinctions."
+          ],
+          "shortcutsAndTricks": [
+            "Learn contrast pairs in context."
+          ],
+          "commonMistakes": [
+            "Assuming advanced words are interchangeable."
+          ]
+        }
+      },
+      {
+        "id": "paragraph-correction",
+        "name": "Paragraph Correction",
+        "priority": 35,
+        "content": {
+          "importantFormulasOrRules": [
+            "Check grammar, coherence, transitions and redundancy."
+          ],
+          "keyConcepts": [
+            "Check grammar, coherence, transitions and redundancy."
+          ],
+          "shortcutsAndTricks": [
+            "Fix clear grammar errors before style."
+          ],
+          "commonMistakes": [
+            "Ignoring overall paragraph flow."
+          ]
+        }
+      }
+    ],
+    "situational": [
+      {
+        "id": "workplace-ethics-integrity",
+        "name": "Workplace Ethics & Integrity",
+        "priority": 1,
+        "content": {
+          "importantFormulasOrRules": [
+            "Act honestly, follow policy and protect trust."
+          ],
+          "keyConcepts": [
+            "Act honestly, follow policy and protect trust."
+          ],
+          "shortcutsAndTricks": [
+            "Choose transparent policy-aligned actions."
+          ],
+          "commonMistakes": [
+            "Hiding problems."
+          ]
+        }
+      },
+      {
+        "id": "teamwork-collaboration",
+        "name": "Teamwork & Collaboration",
+        "priority": 2,
+        "content": {
+          "importantFormulasOrRules": [
+            "Balance shared goals, listening, contribution and respect."
+          ],
+          "keyConcepts": [
+            "Balance shared goals, listening, contribution and respect."
+          ],
+          "shortcutsAndTricks": [
+            "Clarify roles and resolve issues directly."
+          ],
+          "commonMistakes": [
+            "Taking all credit."
+          ]
+        }
+      },
+      {
+        "id": "communication",
+        "name": "Communication",
+        "priority": 3,
+        "content": {
+          "importantFormulasOrRules": [
+            "Be clear, respectful, concise and audience-aware."
+          ],
+          "keyConcepts": [
+            "Be clear, respectful, concise and audience-aware."
+          ],
+          "shortcutsAndTricks": [
+            "Confirm understanding and document key decisions."
+          ],
+          "commonMistakes": [
+            "Blame or vague language."
+          ]
+        }
+      },
+      {
+        "id": "problem-solving",
+        "name": "Problem Solving",
+        "priority": 4,
+        "content": {
+          "importantFormulasOrRules": [
+            "Define the issue, identify causes, compare solutions and verify results."
+          ],
+          "keyConcepts": [
+            "Define the issue, identify causes, compare solutions and verify results."
+          ],
+          "shortcutsAndTricks": [
+            "Use root-cause thinking."
+          ],
+          "commonMistakes": [
+            "Treating symptoms only."
+          ]
+        }
+      },
+      {
+        "id": "prioritization",
+        "name": "Prioritization",
+        "priority": 5,
+        "content": {
+          "importantFormulasOrRules": [
+            "Rank work by urgency, impact, dependency and risk."
+          ],
+          "keyConcepts": [
+            "Rank work by urgency, impact, dependency and risk."
+          ],
+          "shortcutsAndTricks": [
+            "Handle high-impact urgent work first."
+          ],
+          "commonMistakes": [
+            "Doing the easiest task first."
+          ]
+        }
+      },
+      {
+        "id": "customer-handling",
+        "name": "Customer Handling",
+        "priority": 6,
+        "content": {
+          "importantFormulasOrRules": [
+            "Listen, clarify, empathize and solve or route appropriately."
+          ],
+          "keyConcepts": [
+            "Listen, clarify, empathize and solve or route appropriately."
+          ],
+          "shortcutsAndTricks": [
+            "Restate the issue and next step."
+          ],
+          "commonMistakes": [
+            "Arguing with the customer."
+          ]
+        }
+      },
+      {
+        "id": "ownership-accountability",
+        "name": "Ownership & Accountability",
+        "priority": 7,
+        "content": {
+          "importantFormulasOrRules": [
+            "Take responsibility and communicate risks early."
+          ],
+          "keyConcepts": [
+            "Take responsibility and communicate risks early."
+          ],
+          "shortcutsAndTricks": [
+            "State problem, action, owner and deadline."
+          ],
+          "commonMistakes": [
+            "Blaming others."
+          ]
+        }
+      },
+      {
+        "id": "conflict-resolution",
+        "name": "Conflict Resolution",
+        "priority": 8,
+        "content": {
+          "importantFormulasOrRules": [
+            "Focus on facts, shared goals and respectful resolution."
+          ],
+          "keyConcepts": [
+            "Focus on facts, shared goals and respectful resolution."
+          ],
+          "shortcutsAndTricks": [
+            "Discuss privately before escalating."
+          ],
+          "commonMistakes": [
+            "Retaliation or gossip."
+          ]
+        }
+      },
+      {
+        "id": "decision-making",
+        "name": "Decision Making",
+        "priority": 9,
+        "content": {
+          "importantFormulasOrRules": [
+            "Balance evidence, goals, constraints, risk and consequences."
+          ],
+          "keyConcepts": [
+            "Balance evidence, goals, constraints, risk and consequences."
+          ],
+          "shortcutsAndTricks": [
+            "Eliminate invalid options first."
+          ],
+          "commonMistakes": [
+            "Emotion-only decisions."
+          ]
+        }
+      },
+      {
+        "id": "adaptability",
+        "name": "Adaptability",
+        "priority": 10,
+        "content": {
+          "importantFormulasOrRules": [
+            "Adjust plans when valid new information changes priorities."
+          ],
+          "keyConcepts": [
+            "Adjust plans when valid new information changes priorities."
+          ],
+          "shortcutsAndTricks": [
+            "Clarify and update the plan."
+          ],
+          "commonMistakes": [
+            "Resisting all change."
+          ]
+        }
+      },
+      {
+        "id": "time-management",
+        "name": "Time Management",
+        "priority": 11,
+        "content": {
+          "importantFormulasOrRules": [
+            "Plan realistic work and protect important deadlines."
+          ],
+          "keyConcepts": [
+            "Plan realistic work and protect important deadlines."
+          ],
+          "shortcutsAndTricks": [
+            "Break work into milestones."
+          ],
+          "commonMistakes": [
+            "Overcommitting silently."
+          ]
+        }
+      },
+      {
+        "id": "working-under-pressure",
+        "name": "Working Under Pressure",
+        "priority": 12,
+        "content": {
+          "importantFormulasOrRules": [
+            "Stay calm, prioritize and communicate risks."
+          ],
+          "keyConcepts": [
+            "Stay calm, prioritize and communicate risks."
+          ],
+          "shortcutsAndTricks": [
+            "Focus on controllable next actions."
+          ],
+          "commonMistakes": [
+            "Rushing and losing essential quality."
+          ]
+        }
+      },
+      {
+        "id": "leadership",
+        "name": "Leadership",
+        "priority": 13,
+        "content": {
+          "importantFormulasOrRules": [
+            "Set direction, support people, delegate and own outcomes."
+          ],
+          "keyConcepts": [
+            "Set direction, support people, delegate and own outcomes."
+          ],
+          "shortcutsAndTricks": [
+            "Give clear expectations and remove blockers."
+          ],
+          "commonMistakes": [
+            "Micromanaging."
+          ]
+        }
+      },
+      {
+        "id": "receiving-feedback",
+        "name": "Receiving Feedback",
+        "priority": 14,
+        "content": {
+          "importantFormulasOrRules": [
+            "Listen, clarify, evaluate and apply useful feedback."
+          ],
+          "keyConcepts": [
+            "Listen, clarify, evaluate and apply useful feedback."
+          ],
+          "shortcutsAndTricks": [
+            "Identify one concrete improvement."
+          ],
+          "commonMistakes": [
+            "Becoming defensive."
+          ]
+        }
+      },
+      {
+        "id": "giving-constructive-feedback",
+        "name": "Giving Constructive Feedback",
+        "priority": 15,
+        "content": {
+          "importantFormulasOrRules": [
+            "Discuss behavior and impact with a practical improvement path."
+          ],
+          "keyConcepts": [
+            "Discuss behavior and impact with a practical improvement path."
+          ],
+          "shortcutsAndTricks": [
+            "Use specific private examples."
+          ],
+          "commonMistakes": [
+            "Attacking personality."
+          ]
+        }
+      },
+      {
+        "id": "handling-mistakes",
+        "name": "Handling Mistakes",
+        "priority": 16,
+        "content": {
+          "importantFormulasOrRules": [
+            "Acknowledge, contain impact, learn and prevent recurrence."
+          ],
+          "keyConcepts": [
+            "Acknowledge, contain impact, learn and prevent recurrence."
+          ],
+          "shortcutsAndTricks": [
+            "Report important errors with recovery steps."
+          ],
+          "commonMistakes": [
+            "Hiding mistakes."
+          ]
+        }
+      },
+      {
+        "id": "dealing-with-difficult-teammates",
+        "name": "Dealing With Difficult Teammates",
+        "priority": 17,
+        "content": {
+          "importantFormulasOrRules": [
+            "Address behavior professionally and focus on outcomes."
+          ],
+          "keyConcepts": [
+            "Address behavior professionally and focus on outcomes."
+          ],
+          "shortcutsAndTricks": [
+            "Set boundaries and escalate appropriately."
+          ],
+          "commonMistakes": [
+            "Retaliating or gossiping."
+          ]
+        }
+      },
+      {
+        "id": "handling-ambiguous-situations",
+        "name": "Handling Ambiguous Situations",
+        "priority": 18,
+        "content": {
+          "importantFormulasOrRules": [
+            "Separate known facts, unknowns and decision-critical gaps."
+          ],
+          "keyConcepts": [
+            "Separate known facts, unknowns and decision-critical gaps."
+          ],
+          "shortcutsAndTricks": [
+            "Ask targeted questions and state assumptions."
+          ],
+          "commonMistakes": [
+            "Inventing requirements."
+          ]
+        }
+      },
+      {
+        "id": "learning-new-skills-quickly",
+        "name": "Learning New Skills Quickly",
+        "priority": 19,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use focused practice, reliable resources and feedback."
+          ],
+          "keyConcepts": [
+            "Use focused practice, reliable resources and feedback."
+          ],
+          "shortcutsAndTricks": [
+            "Learn what is immediately needed, then deepen."
+          ],
+          "commonMistakes": [
+            "Pretending to know."
+          ]
+        }
+      },
+      {
+        "id": "managing-changing-requirements",
+        "name": "Managing Changing Requirements",
+        "priority": 20,
+        "content": {
+          "importantFormulasOrRules": [
+            "Confirm change, assess impact, reprioritize and document."
+          ],
+          "keyConcepts": [
+            "Confirm change, assess impact, reprioritize and document."
+          ],
+          "shortcutsAndTricks": [
+            "Communicate scope and timeline effects."
+          ],
+          "commonMistakes": [
+            "Continuing with outdated assumptions."
+          ]
+        }
+      },
+      {
+        "id": "professionalism",
+        "name": "Professionalism",
+        "priority": 21,
+        "content": {
+          "importantFormulasOrRules": [
+            "Be reliable, respectful, prepared and accountable."
+          ],
+          "keyConcepts": [
+            "Be reliable, respectful, prepared and accountable."
+          ],
+          "shortcutsAndTricks": [
+            "Communicate changes early."
+          ],
+          "commonMistakes": [
+            "Ignoring workplace norms."
+          ]
+        }
+      },
+      {
+        "id": "confidentiality-data-handling",
+        "name": "Confidentiality & Data Handling",
+        "priority": 22,
+        "content": {
+          "importantFormulasOrRules": [
+            "Access and share information only as authorized."
+          ],
+          "keyConcepts": [
+            "Access and share information only as authorized."
+          ],
+          "shortcutsAndTricks": [
+            "Use approved storage and channels."
+          ],
+          "commonMistakes": [
+            "Casual sharing of sensitive data."
+          ]
+        }
+      },
+      {
+        "id": "customer-escalation",
+        "name": "Customer Escalation",
+        "priority": 23,
+        "content": {
+          "importantFormulasOrRules": [
+            "Escalate when authority, risk or expertise requires it."
+          ],
+          "keyConcepts": [
+            "Escalate when authority, risk or expertise requires it."
+          ],
+          "shortcutsAndTricks": [
+            "Provide a concise factual handoff."
+          ],
+          "commonMistakes": [
+            "Escalating without understanding."
+          ]
+        }
+      },
+      {
+        "id": "resource-management",
+        "name": "Resource Management",
+        "priority": 24,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use time, people, tools and budget according to value."
+          ],
+          "keyConcepts": [
+            "Use time, people, tools and budget according to value."
+          ],
+          "shortcutsAndTricks": [
+            "Match resources to priority."
+          ],
+          "commonMistakes": [
+            "Wasting scarce resources."
+          ]
+        }
+      },
+      {
+        "id": "stakeholder-management",
+        "name": "Stakeholder Management",
+        "priority": 25,
+        "content": {
+          "importantFormulasOrRules": [
+            "Understand needs, influence, expectations and dependencies."
+          ],
+          "keyConcepts": [
+            "Understand needs, influence, expectations and dependencies."
+          ],
+          "shortcutsAndTricks": [
+            "Communicate changes proactively."
+          ],
+          "commonMistakes": [
+            "Promising without confirming feasibility."
+          ]
+        }
+      },
+      {
+        "id": "business-judgement",
+        "name": "Business Judgement",
+        "priority": 26,
+        "content": {
+          "importantFormulasOrRules": [
+            "Balance customer value, cost, quality, risk and long-term impact."
+          ],
+          "keyConcepts": [
+            "Balance customer value, cost, quality, risk and long-term impact."
+          ],
+          "shortcutsAndTricks": [
+            "Prefer sustainable solutions."
+          ],
+          "commonMistakes": [
+            "Optimizing one metric only."
+          ]
+        }
+      },
+      {
+        "id": "ethical-dilemmas",
+        "name": "Ethical Dilemmas",
+        "priority": 27,
+        "content": {
+          "importantFormulasOrRules": [
+            "Identify competing values, rules, harms and responsibilities."
+          ],
+          "keyConcepts": [
+            "Identify competing values, rules, harms and responsibilities."
+          ],
+          "shortcutsAndTricks": [
+            "Choose transparent policy-aligned action."
+          ],
+          "commonMistakes": [
+            "Justifying misconduct by outcome."
+          ]
+        }
+      },
+      {
+        "id": "workplace-diversity-inclusion",
+        "name": "Workplace Diversity & Inclusion",
+        "priority": 28,
+        "content": {
+          "importantFormulasOrRules": [
+            "Respect differences and support fair participation."
+          ],
+          "keyConcepts": [
+            "Respect differences and support fair participation."
+          ],
+          "shortcutsAndTricks": [
+            "Use inclusive language and challenge unfairness appropriately."
+          ],
+          "commonMistakes": [
+            "Stereotyping or exclusion."
+          ]
+        }
+      },
+      {
+        "id": "remote-hybrid-workplace-scenarios",
+        "name": "Remote/Hybrid Workplace Scenarios",
+        "priority": 29,
+        "content": {
+          "importantFormulasOrRules": [
+            "Maintain communication, documentation and availability expectations."
+          ],
+          "keyConcepts": [
+            "Maintain communication, documentation and availability expectations."
+          ],
+          "shortcutsAndTricks": [
+            "Clarify time zones and shared-tool practices."
+          ],
+          "commonMistakes": [
+            "Assuming silence means agreement."
+          ]
+        }
+      },
+      {
+        "id": "crisis-management",
+        "name": "Crisis Management",
+        "priority": 30,
+        "content": {
+          "importantFormulasOrRules": [
+            "Protect people, contain impact, communicate, recover and learn."
+          ],
+          "keyConcepts": [
+            "Protect people, contain impact, communicate, recover and learn."
+          ],
+          "shortcutsAndTricks": [
+            "Follow incident plans and clear ownership."
+          ],
+          "commonMistakes": [
+            "Spreading unverified information."
+          ]
+        }
+      }
+    ],
+    "analytical": [
+      {
+        "id": "critical-thinking",
+        "name": "Critical Thinking",
+        "priority": 1,
+        "content": {
+          "importantFormulasOrRules": [
+            "Break claims into evidence, assumptions and conclusions."
+          ],
+          "keyConcepts": [
+            "Break claims into evidence, assumptions and conclusions."
+          ],
+          "shortcutsAndTricks": [
+            "Challenge unsupported leaps."
+          ],
+          "commonMistakes": [
+            "Treating opinion as evidence."
+          ]
+        }
+      },
+      {
+        "id": "analytical-reasoning",
+        "name": "Analytical Reasoning",
+        "priority": 2,
+        "content": {
+          "importantFormulasOrRules": [
+            "Translate information into relationships and constraints."
+          ],
+          "keyConcepts": [
+            "Translate information into relationships and constraints."
+          ],
+          "shortcutsAndTricks": [
+            "Write facts before solving."
+          ],
+          "commonMistakes": [
+            "Solving from intuition alone."
+          ]
+        }
+      },
+      {
+        "id": "problem-solving",
+        "name": "Problem Solving",
+        "priority": 3,
+        "content": {
+          "importantFormulasOrRules": [
+            "Define, diagnose, generate options, choose and verify."
+          ],
+          "keyConcepts": [
+            "Define, diagnose, generate options, choose and verify."
+          ],
+          "shortcutsAndTricks": [
+            "Use root-cause analysis."
+          ],
+          "commonMistakes": [
+            "Fixing symptoms only."
+          ]
+        }
+      },
+      {
+        "id": "data-analysis",
+        "name": "Data Analysis",
+        "priority": 4,
+        "content": {
+          "importantFormulasOrRules": [
+            "Summarize and compare data using appropriate measures."
+          ],
+          "keyConcepts": [
+            "Summarize and compare data using appropriate measures."
+          ],
+          "shortcutsAndTricks": [
+            "Check units and outliers."
+          ],
+          "commonMistakes": [
+            "Drawing conclusions from incomplete data."
+          ]
+        }
+      },
+      {
+        "id": "data-interpretation",
+        "name": "Data Interpretation",
+        "priority": 5,
+        "content": {
+          "importantFormulasOrRules": [
+            "Read charts and tables accurately before calculating."
+          ],
+          "keyConcepts": [
+            "Read charts and tables accurately before calculating."
+          ],
+          "shortcutsAndTricks": [
+            "Check scale, labels and totals."
+          ],
+          "commonMistakes": [
+            "Misreading axes."
+          ]
+        }
+      },
+      {
+        "id": "logical-deduction",
+        "name": "Logical Deduction",
+        "priority": 6,
+        "content": {
+          "importantFormulasOrRules": [
+            "Derive only conclusions guaranteed by facts."
+          ],
+          "keyConcepts": [
+            "Derive only conclusions guaranteed by facts."
+          ],
+          "shortcutsAndTricks": [
+            "Use elimination."
+          ],
+          "commonMistakes": [
+            "Adding unstated facts."
+          ]
+        }
+      },
+      {
+        "id": "decision-making",
+        "name": "Decision Making",
+        "priority": 7,
+        "content": {
+          "importantFormulasOrRules": [
+            "Compare options against goals, evidence and risk."
+          ],
+          "keyConcepts": [
+            "Compare options against goals, evidence and risk."
+          ],
+          "shortcutsAndTricks": [
+            "Separate mandatory constraints from preferences."
+          ],
+          "commonMistakes": [
+            "Ignoring trade-offs."
+          ]
+        }
+      },
+      {
+        "id": "pattern-recognition",
+        "name": "Pattern Recognition",
+        "priority": 8,
+        "content": {
+          "importantFormulasOrRules": [
+            "Find repeated, sequential, spatial or relational structure."
+          ],
+          "keyConcepts": [
+            "Find repeated, sequential, spatial or relational structure."
+          ],
+          "shortcutsAndTricks": [
+            "Test simple patterns first."
+          ],
+          "commonMistakes": [
+            "Overfitting a pattern."
+          ]
+        }
+      },
+      {
+        "id": "data-sufficiency",
+        "name": "Data Sufficiency",
+        "priority": 9,
+        "content": {
+          "importantFormulasOrRules": [
+            "Determine whether information uniquely answers the target."
+          ],
+          "keyConcepts": [
+            "Determine whether information uniquely answers the target."
+          ],
+          "shortcutsAndTricks": [
+            "Test statements independently."
+          ],
+          "commonMistakes": [
+            "Solving unnecessarily."
+          ]
+        }
+      },
+      {
+        "id": "information-evaluation",
+        "name": "Information Evaluation",
+        "priority": 10,
+        "content": {
+          "importantFormulasOrRules": [
+            "Judge relevance, reliability, consistency and evidence quality."
+          ],
+          "keyConcepts": [
+            "Judge relevance, reliability, consistency and evidence quality."
+          ],
+          "shortcutsAndTricks": [
+            "Check source and corroboration."
+          ],
+          "commonMistakes": [
+            "Treating every source as equally reliable."
+          ]
+        }
+      },
+      {
+        "id": "estimation",
+        "name": "Estimation",
+        "priority": 11,
+        "content": {
+          "importantFormulasOrRules": [
+            "Approximate while preserving useful magnitude and direction."
+          ],
+          "keyConcepts": [
+            "Approximate while preserving useful magnitude and direction."
+          ],
+          "shortcutsAndTricks": [
+            "Round strategically."
+          ],
+          "commonMistakes": [
+            "Overprecision."
+          ]
+        }
+      },
+      {
+        "id": "case-based-reasoning",
+        "name": "Case-Based Reasoning",
+        "priority": 12,
+        "content": {
+          "importantFormulasOrRules": [
+            "Apply principles to a concrete scenario."
+          ],
+          "keyConcepts": [
+            "Apply principles to a concrete scenario."
+          ],
+          "shortcutsAndTricks": [
+            "Separate facts from assumptions."
+          ],
+          "commonMistakes": [
+            "Using irrelevant precedent."
+          ]
+        }
+      },
+      {
+        "id": "constraint-based-problems",
+        "name": "Constraint-Based Problems",
+        "priority": 13,
+        "content": {
+          "importantFormulasOrRules": [
+            "Use every condition to eliminate impossible states."
+          ],
+          "keyConcepts": [
+            "Use every condition to eliminate impossible states."
+          ],
+          "shortcutsAndTricks": [
+            "Build a constraint table."
+          ],
+          "commonMistakes": [
+            "Forgetting one condition."
+          ]
+        }
+      },
+      {
+        "id": "optimization-problems",
+        "name": "Optimization Problems",
+        "priority": 14,
+        "content": {
+          "importantFormulasOrRules": [
+            "Maximize/minimize an objective under constraints."
+          ],
+          "keyConcepts": [
+            "Maximize/minimize an objective under constraints."
+          ],
+          "shortcutsAndTricks": [
+            "Identify objective and feasible region."
+          ],
+          "commonMistakes": [
+            "Optimizing without checking constraints."
+          ]
+        }
+      },
+      {
+        "id": "assumption-identification",
+        "name": "Assumption Identification",
+        "priority": 15,
+        "content": {
+          "importantFormulasOrRules": [
+            "Find the unstated condition required for a claim."
+          ],
+          "keyConcepts": [
+            "Find the unstated condition required for a claim."
+          ],
+          "shortcutsAndTricks": [
+            "Ask what would make the claim fail."
+          ],
+          "commonMistakes": [
+            "Confusing assumption with conclusion."
+          ]
+        }
+      },
+      {
+        "id": "argument-evaluation",
+        "name": "Argument Evaluation",
+        "priority": 16,
+        "content": {
+          "importantFormulasOrRules": [
+            "Test relevance, evidence, assumptions and validity."
+          ],
+          "keyConcepts": [
+            "Test relevance, evidence, assumptions and validity."
+          ],
+          "shortcutsAndTricks": [
+            "Separate strong evidence from rhetoric."
+          ],
+          "commonMistakes": [
+            "Being persuaded by tone."
+          ]
+        }
+      },
+      {
+        "id": "cause-effect-analysis",
+        "name": "Cause & Effect Analysis",
+        "priority": 17,
+        "content": {
+          "importantFormulasOrRules": [
+            "Distinguish correlation from plausible causation."
+          ],
+          "keyConcepts": [
+            "Distinguish correlation from plausible causation."
+          ],
+          "shortcutsAndTricks": [
+            "Check timing, mechanism and alternatives."
+          ],
+          "commonMistakes": [
+            "Assuming correlation proves cause."
+          ]
+        }
+      },
+      {
+        "id": "inference",
+        "name": "Inference",
+        "priority": 18,
+        "content": {
+          "importantFormulasOrRules": [
+            "Draw the strongest conclusion justified by evidence."
+          ],
+          "keyConcepts": [
+            "Draw the strongest conclusion justified by evidence."
+          ],
+          "shortcutsAndTricks": [
+            "Prefer conservative supported conclusions."
+          ],
+          "commonMistakes": [
+            "Overreaching beyond evidence."
+          ]
+        }
+      },
+      {
+        "id": "evidence-based-reasoning",
+        "name": "Evidence-Based Reasoning",
+        "priority": 19,
+        "content": {
+          "importantFormulasOrRules": [
+            "Prefer measurable, relevant and verifiable support."
+          ],
+          "keyConcepts": [
+            "Prefer measurable, relevant and verifiable support."
+          ],
+          "shortcutsAndTricks": [
+            "Compare claim strength with evidence strength."
+          ],
+          "commonMistakes": [
+            "Using anecdotes as proof."
+          ]
+        }
+      },
+      {
+        "id": "scenario-analysis",
+        "name": "Scenario Analysis",
+        "priority": 20,
+        "content": {
+          "importantFormulasOrRules": [
+            "Compare outcomes under different conditions and assumptions."
+          ],
+          "keyConcepts": [
+            "Compare outcomes under different conditions and assumptions."
+          ],
+          "shortcutsAndTricks": [
+            "List scenarios and likely consequences."
+          ],
+          "commonMistakes": [
+            "Ignoring alternative outcomes."
+          ]
+        }
+      }
+    ]
+  }
+}

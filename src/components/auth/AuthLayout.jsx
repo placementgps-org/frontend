@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import Navbar from '../Navbar';
 
 /**

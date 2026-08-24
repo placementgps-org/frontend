@@ -11,6 +11,18 @@ import ResetPasswordPage from './pages/ResetPasswordPage';
 import DashboardPage from './pages/DashboardPage';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 
+// Aptitude Practice Pages
+import AptitudeLandingPage from './pages/aptitude/AptitudeLandingPage';
+import CategoryPage from './pages/aptitude/CategoryPage';
+import TopicLearnPage from './pages/aptitude/TopicLearnPage';
+import PracticeQuizPage from './pages/aptitude/PracticeQuizPage';
+import CompanyPracticePage from './pages/aptitude/CompanyPracticePage';
+import FreeCoursesPage from './pages/courses/FreeCoursesPage';
+import CareerMapLandingPage from './pages/careers/CareerMapLandingPage';
+import RoadmapPage from './pages/roadmap/RoadmapPage';
+import CareerAIAdvisor from './pages/careers/CareerAIAdvisor';
+import ResumeAnalyserPage from './pages/resume/ResumeAnalyserPage';
+
 export default function App() {
   const navigate = useNavigate();
 
@@ -31,6 +43,18 @@ export default function App() {
       <Route path="/forgot-password" element={<ForgotPasswordPage />} />
       <Route path="/reset-password" element={<ResetPasswordPage />} />
 
+      {/* Career Map / AI Routes */}
+      <Route path="/career-map" element={
+        <ProtectedRoute>
+          <CareerMapLandingPage />
+        </ProtectedRoute>
+      } />
+      <Route path="/career-map/ai-advisor" element={
+        <ProtectedRoute>
+          <CareerAIAdvisor />
+        </ProtectedRoute>
+      } />
+
       {/* ── Protected Routes ── */}
       <Route
         path="/dashboard"
@@ -41,51 +65,56 @@ export default function App() {
         }
       />
 
-      {/* ── Feature Placeholder Routes ── */}
+      {/* ── Aptitude Practice Routes ── */}
       <Route
         path="/practice"
+        element={<AptitudeLandingPage />}
+      />
+      <Route
+        path="/practice/:categoryId"
+        element={<CategoryPage />}
+      />
+      <Route
+        path="/practice/:categoryId/:topicId"
+        element={<TopicLearnPage />}
+      />
+      <Route
+        path="/practice/:categoryId/:topicId/quiz"
         element={
-          <PlaceholderPage
-            title="Practice Arena"
-            description="Practice coding, aptitude, logical reasoning, verbal ability, and technical MCQs with detailed explanations. Coming soon."
-            icon={Code2}
-            onOpenLogin={openLogin}
-          />
+          <ProtectedRoute>
+            <PracticeQuizPage />
+          </ProtectedRoute>
         }
+      />
+      <Route
+        path="/practice/:categoryId/:topicId/company"
+        element={
+          <ProtectedRoute>
+            <CompanyPracticePage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/free-courses"
+        element={<FreeCoursesPage />}
       />
       <Route
         path="/roadmap"
         element={
-          <PlaceholderPage
-            title="Personalized Roadmap"
-            description="Receive a customized preparation plan based on your strengths, weaknesses, and dream company. Coming soon."
-            icon={Map}
-            onOpenLogin={openLogin}
-          />
+          <ProtectedRoute>
+            <RoadmapPage />
+          </ProtectedRoute>
         }
       />
       <Route
         path="/resume-analyser"
         element={
-          <PlaceholderPage
-            title="Resume Analyser"
-            description="Upload your resume and receive AI-powered ATS optimization suggestions. Coming soon."
-            icon={FileCheck2}
-            onOpenLogin={openLogin}
-          />
+          <ProtectedRoute>
+            <ResumeAnalyserPage />
+          </ProtectedRoute>
         }
       />
-      <Route
-        path="/free-courses"
-        element={
-          <PlaceholderPage
-            title="Free Courses"
-            description="Discover curated YouTube videos, documentation, roadmaps, and courses—all completely free. Coming soon."
-            icon={BookOpenCheck}
-            onOpenLogin={openLogin}
-          />
-        }
-      />
+      
       <Route
         path="/interview-practice"
         element={

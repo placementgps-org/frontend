@@ -25,7 +25,7 @@ export default function VerifyOTPPage() {
   const { login } = useAuth();
 
   // Get context from navigation state
-  const { email, phone, purpose = 'registration', message = '', method = 'email' } = location.state || {};
+  const { email, phone, purpose = 'registration', message = '' } = location.state || {};
 
   // Redirect if no context
   useEffect(() => {

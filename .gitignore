@@ -11,6 +11,15 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
+*.env
+server/.env
+server/courses_dump.json
+server/scratch.js
+server/scratch_export.js
+server/dropIndex.js
+server/fixActive.js
 
 # Editor directories and files
 .vscode/*

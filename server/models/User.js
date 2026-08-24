@@ -59,6 +59,16 @@ const userSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.Mixed,
       default: {},
     },
+    // Stores history of progress when switching between careers
+    careerHistories: {
+      type: mongoose.Schema.Types.Mixed,
+      default: {},
+    },
+    // Stores AI-generated custom career roadmaps (keyed by careerId slug)
+    customRoadmaps: {
+      type: mongoose.Schema.Types.Mixed,
+      default: {},
+    },
     quizHistory: {
       type: [mongoose.Schema.Types.Mixed],
       default: [],

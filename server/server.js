@@ -7,6 +7,11 @@ import { getTransporter } from './utils/sendEmail.js';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import userRoutes from './routes/userRoutes.js';
+import aptitudeRoutes from './routes/aptitudeRoutes.js';
+import courseRoutes from './routes/courseRoutes.js';
+import roadmapRoutes from './routes/roadmapRoutes.js';
+import aiRoutes from './routes/aiRoutes.js';
+import resumeRoutes from './routes/resumeRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 // Load environment variables
@@ -111,6 +116,11 @@ app.use(express.urlencoded({ extended: true }));
 // ── API Routes ───────────────────────────────────────────────────────────────
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/aptitude', aptitudeRoutes);
+app.use('/api/courses', courseRoutes);
+app.use('/api/roadmap', roadmapRoutes);
+app.use('/api/ai', aiRoutes);
+app.use('/api/resume', resumeRoutes);
 
 // ── Health Check ─────────────────────────────────────────────────────────────
 app.get('/api/health', (req, res) => {

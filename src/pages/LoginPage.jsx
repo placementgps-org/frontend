@@ -57,8 +57,10 @@ export default function LoginPage() {
       // Store auth data
       login(data.token, data.user);
 
-      // Navigate to dashboard
-      navigate('/dashboard', { replace: true });
+      // Navigate to dashboard or redirect URL
+      const searchParams = new URLSearchParams(location.search);
+      const redirectUrl = searchParams.get('redirect') || '/dashboard';
+      navigate(redirectUrl, { replace: true });
     } catch (err) {
       setError(err.message || 'Login failed. Please try again.');
       if (err.data && err.data.unverified) {
@@ -253,7 +255,7 @@ export default function LoginPage() {
       <div className="mt-6 text-center text-xs text-slate-400">
         Don't have an account?{' '}
         <Link
-          to="/register"
+          to={`/register${location.search}`}
           className="text-blue-400 hover:text-blue-300 font-semibold underline underline-offset-4 ml-1"
         >
           Create Account

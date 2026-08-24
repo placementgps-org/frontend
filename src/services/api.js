@@ -25,7 +25,7 @@ async function apiRequest(endpoint, options = {}) {
   let response;
   try {
     response = await fetch(`${API_BASE}${endpoint}`, config);
-  } catch (error) {
+  } catch {
     throw new Error('Network error. Please check your internet connection.');
   }
 
@@ -35,7 +35,7 @@ async function apiRequest(endpoint, options = {}) {
   if (contentType && contentType.includes('application/json')) {
     try {
       data = await response.json();
-    } catch (err) {
+    } catch {
       throw new Error('Invalid response from server.');
     }
   } else {

@@ -59,7 +59,7 @@ const sendSMS = async ({ phone, otp }) => {
         let parsed = {};
         try {
           parsed = JSON.parse(body);
-        } catch (e) {
+        } catch {
           parsed = { message: body };
         }
         
