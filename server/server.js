@@ -12,6 +12,7 @@ import courseRoutes from './routes/courseRoutes.js';
 import roadmapRoutes from './routes/roadmapRoutes.js';
 import aiRoutes from './routes/aiRoutes.js';
 import resumeRoutes from './routes/resumeRoutes.js';
+import codingRoutes from './routes/codingRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 // Load environment variables
@@ -121,6 +122,7 @@ app.use('/api/courses', courseRoutes);
 app.use('/api/roadmap', roadmapRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/resume', resumeRoutes);
+app.use('/api/coding', codingRoutes);
 
 // ── Health Check ─────────────────────────────────────────────────────────────
 app.get('/api/health', (req, res) => {

@@ -22,6 +22,7 @@ import CareerMapLandingPage from './pages/careers/CareerMapLandingPage';
 import RoadmapPage from './pages/roadmap/RoadmapPage';
 import CareerAIAdvisor from './pages/careers/CareerAIAdvisor';
 import ResumeAnalyserPage from './pages/resume/ResumeAnalyserPage';
+import CodingWorkspacePage from './pages/coding/CodingWorkspacePage';
 
 export default function App() {
   const navigate = useNavigate();
@@ -111,6 +112,22 @@ export default function App() {
         element={
           <ProtectedRoute>
             <ResumeAnalyserPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/coding-practice"
+        element={
+          <ProtectedRoute>
+            <CodingWorkspacePage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/coding-practice/:challengeId"
+        element={
+          <ProtectedRoute>
+            <CodingWorkspacePage />
           </ProtectedRoute>
         }
       />
