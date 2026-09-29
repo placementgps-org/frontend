@@ -1,0 +1,250 @@
+/* ═══════════════════════════════════════════════════════════
+   TalkingAvatar — CSS Keyframe Animations
+   Creates a realistic video-call illusion from a static photo
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Idle breathing — subtle scale + float ──────────────── */
+@keyframes avatarBreathing {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50%      { transform: scale(1.006) translateY(-0.8px); }
+}
+
+/* ── Micro jitter — simulates real webcam feed instability ─ */
+@keyframes avatarMicroMove {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  15%  { transform: translate(0.4px, -0.3px) rotate(0.08deg); }
+  30%  { transform: translate(-0.3px, 0.4px) rotate(-0.05deg); }
+  50%  { transform: translate(0.2px, 0.1px) rotate(0.06deg); }
+  70%  { transform: translate(-0.4px, -0.2px) rotate(-0.08deg); }
+  85%  { transform: translate(0.3px, 0.3px) rotate(0.04deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* ── Speaking head movement — nods/sways while talking ───── */
+@keyframes avatarSpeakingMove {
+  0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+  12%      { transform: translate(0.6px, 1.2px) rotate(0.35deg) scale(1.004); }
+  28%      { transform: translate(-0.4px, 0.4px) rotate(-0.2deg) scale(1.007); }
+  44%      { transform: translate(0.5px, -0.3px) rotate(0.15deg) scale(1.003); }
+  60%      { transform: translate(-0.6px, 0.9px) rotate(-0.4deg) scale(1.006); }
+  78%      { transform: translate(0.3px, 0.5px) rotate(0.25deg) scale(1.002); }
+}
+
+/* ── Thinking subtle pulse ─────────────────────────────── */
+@keyframes avatarThinking {
+  0%, 100% { transform: scale(1) rotate(0deg); filter: brightness(1); }
+  50%      { transform: scale(0.998) rotate(-0.4deg); filter: brightness(0.97); }
+}
+
+/* ── Speaking glow on the video tile border ─────────────── */
+@keyframes speakingGlowPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 12px rgba(74, 222, 128, 0.2),
+      inset 0 0 4px rgba(74, 222, 128, 0.04);
+    border-color: rgba(74, 222, 128, 0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 28px rgba(74, 222, 128, 0.45),
+      inset 0 0 10px rgba(74, 222, 128, 0.08);
+    border-color: rgba(74, 222, 128, 0.7);
+  }
+}
+
+/* ── Thinking glow ──────────────────────────────────────── */
+@keyframes thinkingGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(147, 130, 255, 0.15);
+    border-color: rgba(147, 130, 255, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(147, 130, 255, 0.4);
+    border-color: rgba(147, 130, 255, 0.55);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Component classes
+   ═══════════════════════════════════════════════════════════ */
+
+.talking-avatar-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The video tile frame */
+.talking-avatar-tile {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px solid rgba(100, 116, 139, 0.3);
+  background: #0a0f1a;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.talking-avatar-tile.speaking-active {
+  animation: speakingGlowPulse 1.8s ease-in-out infinite;
+}
+
+.talking-avatar-tile.thinking-active {
+  animation: thinkingGlowPulse 2s ease-in-out infinite;
+}
+
+/* The photo itself */
+.talking-avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Shows entire image, no cropping of shoulders */
+  object-position: center;
+  box-sizing: border-box;
+  display: block;
+  will-change: transform;
+}
+
+.talking-avatar-photo.is-idle {
+  animation:
+    avatarBreathing 4s ease-in-out infinite,
+    avatarMicroMove 8s linear infinite;
+}
+
+.talking-avatar-photo.is-speaking {
+  animation:
+    avatarSpeakingMove 2.5s ease-in-out infinite,
+    avatarMicroMove 6s linear infinite;
+}
+
+.talking-avatar-photo.is-thinking {
+  animation:
+    avatarThinking 2.8s ease-in-out infinite,
+    avatarMicroMove 10s linear infinite;
+}
+
+/* ── Mouth SVG State Overlays ───────────────────────── */
+.avatar-mouth-wrapper {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: normal;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.45));
+}
+
+.mouth-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ── Eye blink overlay ─────────────────────────────────── */
+.blink-overlay {
+  position: absolute;
+  pointer-events: none;
+  z-index: 12;
+  border-radius: 50%;
+  transition: opacity 0.05s ease-out;
+  opacity: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(70, 38, 30, 0.75) 0%,
+    rgba(110, 65, 52, 0.85) 50%,
+    rgba(50, 25, 20, 0.5) 100%
+  );
+  filter: blur(1px);
+}
+
+.blink-overlay.blink-active {
+  opacity: 0.88;
+}
+
+/* ── Name bar at bottom of the video tile ──────────────── */
+.avatar-name-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+.avatar-name-bar .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.avatar-name-bar .status-dot.speaking {
+  background: #4ade80;
+  box-shadow: 0 0 6px rgba(74, 222, 128, 0.6);
+  animation: speakingDotPulse 1.2s ease-in-out infinite;
+}
+
+.avatar-name-bar .status-dot.thinking {
+  background: #a78bfa;
+  box-shadow: 0 0 6px rgba(167, 139, 250, 0.5);
+  animation: speakingDotPulse 1.5s ease-in-out infinite;
+}
+
+.avatar-name-bar .status-dot.idle {
+  background: #60a5fa;
+}
+
+@keyframes speakingDotPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.3); opacity: 0.7; }
+}
+
+.avatar-name-bar .avatar-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.avatar-name-bar .avatar-badge {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: auto;
+}
+
+/* ── Audio waveform ring (behind/around the tile) ──────── */
+.speaking-waveform-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 1.1rem;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.speaking-waveform-ring.active {
+  opacity: 1;
+  background: conic-gradient(
+    from 0deg,
+    rgba(74, 222, 128, 0.08),
+    rgba(74, 222, 128, 0.2),
+    rgba(74, 222, 128, 0.08),
+    rgba(74, 222, 128, 0.2),
+    rgba(74, 222, 128, 0.08)
+  );
+  animation: waveformRotate 3s linear infinite;
+}
+
+@keyframes waveformRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

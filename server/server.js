@@ -3,6 +3,9 @@ import cors from 'cors';
 import helmet from 'helmet';
 import mongoSanitize from 'express-mongo-sanitize';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 import { getTransporter } from './utils/sendEmail.js';
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
@@ -13,9 +16,14 @@ import roadmapRoutes from './routes/roadmapRoutes.js';
 import aiRoutes from './routes/aiRoutes.js';
 import resumeRoutes from './routes/resumeRoutes.js';
 import codingRoutes from './routes/codingRoutes.js';
+import interviewRoutes from './routes/interviewRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
-// Load environment variables
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load environment variables from server/.env then fallback to .env
+dotenv.config({ path: path.join(__dirname, '.env') });
 dotenv.config();
 
 // Validate critical configurations
@@ -123,6 +131,7 @@ app.use('/api/roadmap', roadmapRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/resume', resumeRoutes);
 app.use('/api/coding', codingRoutes);
+app.use('/api/interview', interviewRoutes);
 
 // ── Health Check ─────────────────────────────────────────────────────────────
 app.get('/api/health', (req, res) => {
@@ -136,7 +145,7 @@ app.use(errorHandler);
 // ── Start Server ─────────────────────────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Placement GPS Server running on port ${PORT}`);
   console.log(`   Environment: ${process.env.NODE_ENV || 'development'}`);
 });

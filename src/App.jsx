@@ -23,6 +23,12 @@ import RoadmapPage from './pages/roadmap/RoadmapPage';
 import CareerAIAdvisor from './pages/careers/CareerAIAdvisor';
 import ResumeAnalyserPage from './pages/resume/ResumeAnalyserPage';
 import CodingWorkspacePage from './pages/coding/CodingWorkspacePage';
+import InterviewLandingPage from './pages/interview/InterviewLandingPage';
+import InterviewSetupPage from './pages/interview/InterviewSetupPage';
+import TypingInterviewPage from './pages/interview/TypingInterviewPage';
+import SpeakingInterviewPage from './pages/interview/SpeakingInterviewPage';
+import InterviewReportPage from './pages/interview/InterviewReportPage';
+import InterviewHistoryPage from './pages/interview/InterviewHistoryPage';
 
 export default function App() {
   const navigate = useNavigate();
@@ -135,12 +141,49 @@ export default function App() {
       <Route
         path="/interview-practice"
         element={
-          <PlaceholderPage
-            title="Interview Practice"
-            description="Practice HR and technical interviews with an intelligent AI interviewer, receive real-time feedback, improve your communication skills, and prepare confidently for placements. Coming soon."
-            icon={Mic}
-            onOpenLogin={openLogin}
-          />
+          <ProtectedRoute>
+            <InterviewLandingPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/interview-practice/setup"
+        element={
+          <ProtectedRoute>
+            <InterviewSetupPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/interview-practice/typing"
+        element={
+          <ProtectedRoute>
+            <TypingInterviewPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/interview-practice/speaking"
+        element={
+          <ProtectedRoute>
+            <SpeakingInterviewPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/interview-practice/report/:sessionId"
+        element={
+          <ProtectedRoute>
+            <InterviewReportPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/interview-practice/history"
+        element={
+          <ProtectedRoute>
+            <InterviewHistoryPage />
+          </ProtectedRoute>
         }
       />
       <Route
