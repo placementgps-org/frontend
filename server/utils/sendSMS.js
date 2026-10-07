@@ -11,6 +11,14 @@ const sendSMS = async ({ phone, otp }) => {
   const fromPhone = process.env.SMS_SENDER_ID || process.env.TWILIO_PHONE;
 
   if (!accountSid || !authToken || !fromPhone) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn('⚠️ [SMS] Missing credentials! Using mock SMS service for development.');
+      console.log(`\n=============================================`);
+      console.log(`📱 MOCK SMS SENT TO: ${phone}`);
+      console.log(`🔑 OTP CODE: ${otp}`);
+      console.log(`=============================================\n`);
+      return { success: true, sid: 'mock_sid' };
+    }
     console.error('[sendSMS] Twilio credentials are not configured. Cannot send SMS.');
     throw new Error('SMS OTP service is not configured. Missing SMS credentials.');
   }

@@ -15,6 +15,18 @@ const getTransporter = () => {
   const pass = process.env.SMTP_PASS;
 
   if (!host || !user || !pass) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn('⚠️ [SMTP] Missing credentials! Using mock transporter for development.');
+      return {
+        sendMail: async (mailOptions) => {
+          console.log('\n=============================================');
+          console.log(`✉️  MOCK EMAIL SENT TO: ${mailOptions.to}`);
+          console.log(`🔑 SUBJECT: ${mailOptions.subject}`);
+          // Note: The OTP is already logged by the sendEmail function if process.env.DEBUG_OTP = true
+          console.log('=============================================\n');
+        }
+      };
+    }
     throw new Error('Email OTP service is not configured. Missing SMTP credentials.');
   }
 
@@ -41,7 +53,7 @@ const sendEmail = async ({ to, subject, otp }) => {
   const fromEmail = process.env.EMAIL_FROM || process.env.FROM_EMAIL || 'noreply@placementgps.ai';
 
   // Conditional debug logging of OTP for developers
-  if (process.env.NODE_ENV === 'development' && process.env.DEBUG_OTP === 'true') {
+  if (process.env.NODE_ENV !== 'production' || process.env.DEBUG_OTP === 'true') {
     console.log(`[sendEmail] [DEBUG OTP] To: ${to} | OTP Code: ${otp}`);
   }
 
