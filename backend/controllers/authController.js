@@ -33,7 +33,8 @@ export const register = async (req, res) => {
     console.log('[Register] Body:', JSON.stringify(req.body, null, 2));
     console.log('[Register] Database status:', User.db.readyState === 1 ? 'Connected' : 'Disconnected');
 
-    const { name, email, phone, password } = req.body;
+    const { name, phone, password } = req.body;
+    const email = req.body.email ? req.body.email.toLowerCase().trim() : undefined;
 
     // Validate name
     if (!name || !name.trim()) {
@@ -175,7 +176,8 @@ export const login = async (req, res) => {
     console.log('[Login] Request received');
     console.log('[Login] Body:', JSON.stringify({ ...req.body, password: '***' }, null, 2));
 
-    const { email, phone, password } = req.body;
+    const { phone, password } = req.body;
+    const email = req.body.email ? req.body.email.toLowerCase().trim() : undefined;
 
     // Must provide either email or phone
     if (!email && !phone) {
@@ -258,7 +260,8 @@ export const login = async (req, res) => {
 export const sendEmailOTP = async (req, res) => {
   try {
     console.log('[Send Email OTP] Request received:', req.body);
-    const { email, purpose } = req.body;
+    const { purpose } = req.body;
+    const email = req.body.email ? req.body.email.toLowerCase().trim() : undefined;
 
     if (!email) {
       console.log('[Send Email OTP] Validation failed: Email missing');
@@ -347,7 +350,8 @@ export const verifyOTP = async (req, res) => {
   try {
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
     console.log('[Verify OTP] Request received:', req.body);
-    const { email, phone, otp } = req.body;
+    const { phone, otp } = req.body;
+    const email = req.body.email ? req.body.email.toLowerCase().trim() : undefined;
 
     if (!otp) {
       console.log('[Verify OTP] Validation failed: OTP missing');
@@ -486,7 +490,8 @@ export const verifyOTP = async (req, res) => {
 // ─────────────────────────────────────────────────────────────────────────────
 export const forgotPassword = async (req, res) => {
   try {
-    const { email, phone } = req.body;
+    const { phone } = req.body;
+    const email = req.body.email ? req.body.email.toLowerCase().trim() : undefined;
 
     if (!email && !phone) {
       return res.status(400).json({ success: false, message: 'Please provide email or phone number' });
@@ -531,7 +536,8 @@ export const forgotPassword = async (req, res) => {
 // ─────────────────────────────────────────────────────────────────────────────
 export const resetPassword = async (req, res) => {
   try {
-    const { email, phone, password } = req.body;
+    const { phone, password } = req.body;
+    const email = req.body.email ? req.body.email.toLowerCase().trim() : undefined;
 
     if (!email && !phone) {
       return res.status(400).json({ success: false, message: 'Email or phone number is required' });
